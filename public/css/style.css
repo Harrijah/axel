@@ -1,0 +1,15 @@
+*{
+    background-color: blanchedalmond;
+}
+.logo-image, .menu-section{
+    display: inline-block;
+}
+.menu{
+    list-style-type: none;
+}
+.menu li{
+    display: inline-block;
+}
+.principal01, .principal02{
+    display: inline-block;
+}
