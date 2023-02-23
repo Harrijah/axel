@@ -6,6 +6,7 @@
         public function accueil()
         {
             return view('template-parts/header')
+            . view('template-parts/banneer01')
             . view('template-parts/footer');
         }
     }

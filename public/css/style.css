@@ -1,6 +1,6 @@
-*{
-    background-color: blanchedalmond;
-}
+/* *{
+    background-color: whitesmoke;
+} */
 .logo-image, .menu-section{
     display: inline-block;
 }
@@ -11,21 +11,84 @@
     display: inline-block;
 }
 .principal-ban{
-    position: absolute;
-    display: block;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "tp tp ip ip"
+    "c1 c2 ip ip"
+    "c1 c2 c3 c4"
+    "c1 c2 c3 c4"
+    "c1 c2 c3 c4";
+    background: linear-gradient(white, rgb(182, 179, 179) );
 }
-.principal01, .principal02{
-    display: inline-block;
-    width: 49%;
+.principal01{
+    grid-area: tp;
 }
-.principal01 h1{
+.principal02{
+    grid-area: ip;
+}
+.product-card01{
+    grid-area: c1;
+    margin: 0 20px 0 20px;
+    padding: 20px;
+}
+.spacer{
+    width: 100%;
+    height: 100px;
+}
+.product-card02{
+    grid-area: c2;
+    margin: 20px;
+    padding: 20px;
+}
+.product-card03{
+    grid-area: c3;
+    margin: 20px;
+    padding: 20px;
+}
+.product-card04{
+    grid-area: c4;
+    margin: 20px;
+    padding: 20px;
+}
+.principal01 h1 {
     position: relative;
     text-align: center;
-    /* left: 50%;
-    transform: translateY(-50%); */
     font-family: 'script';
-
+    font-size: 5rem;
 }
 .main-image{
     width:35vw;
+    /* background-color: yellow; */
 }
+
+.image-separator{
+    width: 100%;
+    border-bottom: solid 2px brown ;
+}
+
+
+.container {
+    position: relative;
+    width: 100vw;
+  }
+  
+  .content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150%;
+    height: 150%;
+    background-color: red;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    z-index: 0;
+  }
+  
+  
