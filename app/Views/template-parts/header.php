@@ -19,9 +19,9 @@
             </ul>
         </div>
     </nav>
-    <section>
+    <section class="principal-ban">
         <div class="principal01"><h1>Entreprises, développez votre potentiel</h1></div>
-        <div class="principal02"><img src="" alt="Développez votre potentiel"></div>
+        <div class="principal02"><img src="<?php echo base_url('image/entreprise.fw.png'); ?>" class="main-image" alt="Développez votre potentiel"></div>
     </section>
 
 

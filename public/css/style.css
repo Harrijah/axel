@@ -10,6 +10,22 @@
 .menu li{
     display: inline-block;
 }
+.principal-ban{
+    position: absolute;
+    display: block;
+}
 .principal01, .principal02{
     display: inline-block;
+    width: 49%;
+}
+.principal01 h1{
+    position: relative;
+    text-align: center;
+    /* left: 50%;
+    transform: translateY(-50%); */
+    font-family: 'script';
+
+}
+.main-image{
+    width:35vw;
 }
