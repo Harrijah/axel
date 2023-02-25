@@ -1,8 +1,17 @@
 /* *{
     background-color: whitesmoke;
 } */
+nav{
+    background: black;
+}
 .logo-image, .menu-section{
     display: inline-block;
+}
+.menu-section a{
+    color: white;
+}
+.logo{
+    height: 80px;
 }
 .menu{
     list-style-type: none;
@@ -12,14 +21,15 @@
 }
 .principal-ban{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-row: auto;
+    grid-template-columns: 10% 20% 20% 20% 20% 10%;
+    grid-template-rows: 300px 250px 300px 300px;
     grid-template-areas: 
-    "tp tp ip ip"
-    "c1 c2 ip ip"
-    "c1 c2 c3 c4"
-    "c1 c2 c3 c4"
-    "c1 c2 c3 c4";
+    "tp tp tp ip ip ip"
+    "nc01 c1 c2 ip ip ip"
+    "nc01 c1 c2 c3 c4 nc02"
+    "nw nw nw c3 c4 nc02";
+    margin-top: 50px;
     background: linear-gradient(white, rgb(182, 179, 179) );
 }
 .principal01{
@@ -27,11 +37,12 @@
 }
 .principal02{
     grid-area: ip;
+    margin: auto;
 }
 .product-card01{
     grid-area: c1;
-    margin: 0 20px 0 20px;
-    padding: 20px;
+    margin: 0 10px 0 10px;
+    padding: 10px;
 }
 .spacer{
     width: 100%;
@@ -39,24 +50,40 @@
 }
 .product-card02{
     grid-area: c2;
-    margin: 20px;
-    padding: 20px;
+    margin: 10px;
+    padding: 10px;
 }
 .product-card03{
     grid-area: c3;
-    margin: 20px;
-    padding: 20px;
+    margin: 10px;
+    padding: 10px;
 }
 .product-card04{
     grid-area: c4;
-    margin: 20px;
+    margin: 10px;
+    padding: 10px;
+}
+.nonecol01{
+    grid-area : nc01;
+}
+.nonecol02{
+    grid-area : nc02;
+}
+.news01{
+    grid-area: nw;
+    border-image: linear-gradient(235deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(0%, 0%, 0%, 70%) 70% );
+    border-image-slice: 2;
+    border-image-width: 4px;
     padding: 20px;
+    border-radius: 30px;
 }
 .principal01 h1 {
     position: relative;
-    text-align: center;
+    text-align: right;
     font-family: 'script';
     font-size: 5rem;
+    margin-bottom: 75px;
+    color: rgb(194, 9, 95);
 }
 .main-image{
     width:35vw;
@@ -64,12 +91,14 @@
 }
 
 .image-separator{
-    width: 100%;
+    height: 200px;
     border-bottom: solid 2px brown ;
 }
 
-
-.container {
+input, textarea{
+    display: block;
+}
+/* .container {
     position: relative;
     width: 100vw;
   }
@@ -90,5 +119,5 @@
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
     z-index: 0;
   }
-  
+   */
   

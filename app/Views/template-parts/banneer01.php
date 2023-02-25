@@ -28,16 +28,24 @@
                 <p>Confection de plaque publicitaire, confection de présentoirs, PLV, impression 3D</p>
                 <a href="#">Nous contacter</a>
             </div>
+            <div class="nonecol01"></div>
+            <div class="nonecol02"></div>
+            <div class="news01">
+                <div>
+                    <h3>Vous avez un besoin ?</h3>
+                    <p>Décrivez-le nous en quelques mots !</p>
+                    <form action="" method="post">
+                        <input type="email" name="email" id="email" placeholder="Votre e-mail">
+                        <textarea name="" id="" cols="50" rows="5" placeholder="Votre message, ici"></textarea>
+                        <button type="submit">Soumettre</button>
+                    </form>
+                </div>
+            </div>
                 
             
     </section>
 
-    <div class="container">
-        <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis feugiat ex quis nibh ullamcorper, a cursus lectus bibendum. Donec elementum magna eget elit blandit porttitor. Nunc euismod turpis vitae nunc semper luctus. Fusce eu nunc ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis feugiat ex quis nibh ullamcorper, a cursus lectus bibendum. Donec elementum magna eget elit blandit porttitor. Nunc euismod turpis vitae nunc semper luctus. Fusce eu nunc ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis feugiat ex quis nibh ullamcorper, a cursus lectus bibendum. Donec elementum magna eget elit blandit porttitor. Nunc euismod turpis vitae nunc semper luctus. Fusce eu nunc ipsum. </p>
-        </div>
-        <div class="background"></div>
-    </div>
+    
 
 
     

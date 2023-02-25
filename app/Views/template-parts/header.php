@@ -11,7 +11,7 @@
 </head>
 <body>
     <nav>
-        <div class="logo-image"><img src="" alt="logo"></div>
+        <div class="logo-image"><img src="<?php echo base_url('image/logo.jpg') ?>" alt="logo" class="logo"></div>
         <div class="menu-section">
             <ul class="menu">
                 <li><a href="#">Actus</a></li>
