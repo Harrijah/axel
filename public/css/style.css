@@ -1,8 +1,35 @@
 /* *{
     background-color: whitesmoke;
 } */
+:root {
+    --color01: #69A50A;
+    --color02: #475E22; 
+    --color03: #ACE352;
+    --color04: #3C5E06;
+    --color05: #8EDE0D;
+}
+
+.bouton01 {
+    position: relative;
+    text-decoration: none;
+    color: var(--color01);
+    margin: 20px 0;
+    padding: 10px 15px;
+    border: solid 1px var(--color01);
+    border-radius: 20px;
+}
+.bouton02 {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    margin: 20px 0;
+    padding: 10px 15px;
+    border: solid 1px white;
+    border-radius: 20px;
+}
+
 nav{
-    background: black;
+    background: var(--color01);
 }
 .logo-image, .menu-section{
     display: inline-block;
@@ -41,6 +68,8 @@ nav{
 }
 .product-card01{
     grid-area: c1;
+    position: relative;
+    text-align: center;
     margin: 0 10px 0 10px;
     padding: 10px;
 }
@@ -50,16 +79,30 @@ nav{
 }
 .product-card02{
     grid-area: c2;
+    position: relative;
+    text-align: center;
     margin: 10px;
     padding: 10px;
 }
 .product-card03{
     grid-area: c3;
+    position: relative;
+    text-align: center;
     margin: 10px;
     padding: 10px;
 }
+.backme{
+    color: white;
+    background-color: var(--color01);
+    height: fit-content;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: var(--color04) 0px 7px 29px 0px;
+}
 .product-card04{
     grid-area: c4;
+    position: relative;
+    text-align: center;
     margin: 10px;
     padding: 10px;
 }
@@ -71,7 +114,7 @@ nav{
 }
 .news01{
     grid-area: nw;
-    border-image: linear-gradient(235deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(0%, 0%, 0%, 70%) 70% );
+    border-image: linear-gradient(235deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), var(--color04) 70% );
     border-image-slice: 2;
     border-image-width: 4px;
     margin-left: 100px;
@@ -84,7 +127,7 @@ nav{
     font-family: 'script';
     font-size: 5rem;
     margin-bottom: 75px;
-    color: rgb(194, 9, 95);
+    color: var(--color04);
 }
 .main-image{
     width:35vw;
@@ -93,11 +136,11 @@ nav{
 
 .image-separator{
     height: 200px;
-    border-bottom: solid 2px brown ;
+    border-bottom: solid 2px var(--color04) ;
 }
 .md{
     width: 100%;
-    border-bottom: solid 2px brown ;
+    border-bottom: solid 2px var(--color04) ;
 }
 
 input, textarea{
@@ -131,19 +174,23 @@ input, textarea{
 }
 .bandeau01, .bandeau02, .bandeau03{
     position: relative;
+    display: flex;
     margin: auto;
+    padding: 40px 0;
     width: 80%;
-    height: fit-content;
 }
 .extraband{
-    background-color: darkkhaki;
+    background: var(--color02);
+    backdrop-filter: blur(20px);
 }
-   .imagb01, .textb01, .imagb02, .textb02, .imagb03, .textb03{
-    display: inline-block;
+.extraband h2, .extraband p{
+    color: white;
+}
+.imagb01, .textb01, .imagb02, .textb02, .imagb03, .textb03{
     width: 49%;
-    height: fit-content;
    }
-   .imagimb01, .imagimb02, .imagimb03{
+   
+.imagimb01, .imagimb02, .imagimb03{
     position: relative;
     top: 50%;
     left: 50%;
