@@ -11,7 +11,7 @@
             </div>
             <div class="product-card02">
                 <div class="spacer"></div>
-                <img src="<?php echo base_url('image/seo02.png'); ?>" alt="Marketing digital" class="image-separator">
+                <img src="<?php echo base_url('image/men-gba721144d_1280.png'); ?>" alt="Marketing digital" class="md">
                 <h2>Marketing digital</h2>
                 <p>SEO, SEA, Growth hacking, Community management. Nous développons votre visibilité en ligne.</p>
                 <a href="#">Nous contacter</a>
@@ -33,10 +33,9 @@
             <div class="news01">
                 <div>
                     <h3>Vous avez un besoin ?</h3>
-                    <p>Décrivez-le nous en quelques mots !</p>
                     <form action="" method="post">
+                        <textarea name="" id="" cols="50" rows="5" placeholder="Décrivez-le nous en quelques mots !"></textarea>
                         <input type="email" name="email" id="email" placeholder="Votre e-mail">
-                        <textarea name="" id="" cols="50" rows="5" placeholder="Votre message, ici"></textarea>
                         <button type="submit">Soumettre</button>
                     </form>
                 </div>

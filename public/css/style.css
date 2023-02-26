@@ -30,7 +30,7 @@ nav{
     "nc01 c1 c2 c3 c4 nc02"
     "nw nw nw c3 c4 nc02";
     margin-top: 50px;
-    background: linear-gradient(white, rgb(182, 179, 179) );
+    /* background: linear-gradient(white, rgb(182, 179, 179) ); */
 }
 .principal01{
     grid-area: tp;
@@ -74,6 +74,7 @@ nav{
     border-image: linear-gradient(235deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(0%, 0%, 0%, 70%) 70% );
     border-image-slice: 2;
     border-image-width: 4px;
+    margin-left: 100px;
     padding: 20px;
     border-radius: 30px;
 }
@@ -92,6 +93,10 @@ nav{
 
 .image-separator{
     height: 200px;
+    border-bottom: solid 2px brown ;
+}
+.md{
+    width: 100%;
     border-bottom: solid 2px brown ;
 }
 
@@ -120,4 +125,32 @@ input, textarea{
     z-index: 0;
   }
    */
+.arg01{
+    position: absolute;
+    width:100%;
+}
+.bandeau01, .bandeau02, .bandeau03{
+    position: relative;
+    margin: auto;
+    width: 80%;
+    height: fit-content;
+}
+.extraband{
+    background-color: darkkhaki;
+}
+   .imagb01, .textb01, .imagb02, .textb02, .imagb03, .textb03{
+    display: inline-block;
+    width: 49%;
+    height: fit-content;
+   }
+   .imagimb01, .imagimb02, .imagimb03{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 300px;
+   }
+   .imagb01{
+    top: 0;
+   }
   
