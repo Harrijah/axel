@@ -181,7 +181,7 @@ input, textarea{
 }
 .extraband{
     background: var(--color02);
-    backdrop-filter: blur(20px);
+    /* backdrop-filter: blur(20px); */
 }
 .extraband h2, .extraband p{
     color: white;
