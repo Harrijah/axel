@@ -146,31 +146,10 @@ nav{
 input, textarea{
     display: block;
 }
-/* .container {
-    position: relative;
-    width: 100vw;
-  }
-  
-  .content {
-    position: relative;
-    z-index: 1;
-  }
-  
-  .background {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 150%;
-    height: 150%;
-    background-color: red;
-    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-    z-index: 0;
-  }
-   */
+
 .arg01{
     position: absolute;
-    width:100%;
+    width:100%; 
 }
 .bandeau01, .bandeau02, .bandeau03{
     position: relative;
