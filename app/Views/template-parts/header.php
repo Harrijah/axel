@@ -14,6 +14,7 @@
         <div class="logo-image"><img src="<?php echo base_url('image/logo.fw.png') ?>" alt="logo" class="logo"></div>
         <div class="menu-section">
             <ul class="menu">
+                <li><a href="#">Nos services</a></li>
                 <li><a href="#">Actus</a></li>
                 <li><a href="#">Nous contacter</a></li>
             </ul>
