@@ -1,6 +1,6 @@
     <section class="principal-ban">
             <div class="principal01">
-                <h1>Entreprises, développez votre potentiel !</h1>
+                <h1>Entreprise, développez votre potentiel !</h1>
             </div>
             <div class="principal02">
                 <div class="interm">
