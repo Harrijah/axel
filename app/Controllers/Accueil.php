@@ -6,10 +6,15 @@
     {
         public function accueil()
         {
-            return view('template-parts/header')
-            . view('template-parts/banneer01')
-            . view('template-parts/banneer02')
-            . view('template-parts/banneer03')
+            $data = [];
+            return view('template-parts/header', $data)
+            . view('template-parts/accueil/banneer01')
+            . view('template-parts/accueil/banneer02')
+            . view('template-parts/accueil/banneer03')
             . view('template-parts/footer');
         }
+
+
+
+
     }

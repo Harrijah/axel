@@ -1,6 +1,12 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Rajdhani&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
 body{
     background-color: var(--color06);
   }
@@ -23,6 +29,7 @@ body{
     --color07: rgba(255, 255, 255, 0.50);
     --color08: #1641AB;
     --color09: #F7F8F6;
+    --color10: #27686ad8;
   }
   .h2title{
     position: relative;
@@ -114,45 +121,26 @@ body{
 
   
 /* *********************************************** Menu ********************************************************** */  
-  .navprinc{
+  .navprinc, .menu{
     position: relative;
     display: flex;
+    justify-content: space-between;
+    align-items: middle;
     height: 80px;
+    width: 100%;
     background: var(--color02);
   }
-  .logo-image, .menu-section{
-    /* display: inline-block; */
-    margin: 0;
-    padding: 0;
+  .menu li{
+    list-style: none;
   }
   .logo-image{
     position: relative;
     width: 20%;
   }
-  .logo{
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /* height: 80px; */
-  }
   .menu-section{
     position: relative;
     height: 100%;
     /* width: 80%; */
-  }
-  .menu{
-    position: relative;
-    top: 50%;
-    left: 80%;
-    transform: translate(-20%, -50%);
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  .menu li{
-    display: inline-block;
-    position: relative;
   }
   .navmenu{
     position: relative;

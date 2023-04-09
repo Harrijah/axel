@@ -5,7 +5,7 @@
     </div>
     <div class="ban03container">
         <div class="team-member">
-            <img src="<?php echo base_url('image/resized/hari.fw.png') ?>" alt="Chef de projet développement Web" class="avatar">
+            <img src="<?php echo base_url('image/resized/hari.fw.png') ?>" alt="Chef de projet développement Web" class="avatar"> 
             <div class="separator"></div>
             <div class="productcard01">
                 <span class="myname">Hari. A</span>
@@ -16,7 +16,7 @@
             <img src="<?php echo base_url('image/resized/female_avatar.fw.png') ?>" alt="Chef de projet webmarketing" class="avatar">
             <div class="separator"></div>
             <div class="productcard01">
-                <span class="myname">Mirana R.</span>
+                <span class="myname">Olivia R.</span>
                 <h3>Chef de projet webmarketing</h3>
             </div>
         </div>

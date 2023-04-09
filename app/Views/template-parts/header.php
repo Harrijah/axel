@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="<?php echo base_url('bootstrap/css/bootstrap.css'); ?>">
     <link rel="stylesheet" href="<?php echo base_url('bootstrap/css/bootstrap.min.css'); ?>">
     <link rel="stylesheet" href="<?php echo base_url('css/style.css'); ?>">
+    <link rel="stylesheet" href="<?php echo base_url('css/style02.css'); ?>">
     <title>Bienvenue sur Axel</title>
 </head>
     
@@ -25,12 +26,19 @@
 <body>
     <nav class="navprinc">
         <div class="logo-image">
-            <img src="<?php echo base_url('image/resized/logo.fw.png') ?>" alt="logo" class="logo">
+            <a href="<?php echo base_url('/') ?>">
+                <img src="<?php echo base_url('image/resized/logo.fw.png') ?>" alt="logo" class="logo">
+            </a>
         </div>
         <div class="menu-section">
             <!-- <div class="testt"></div> -->
             <ul class="menu">
-                <li><a href="#" class="navmenu">Nos services</a></li><li><a href="#" class="navmenu" id="modalbutton">Nous contacter</a></li>
+                <li>
+                    <a href="<?php echo base_url('developpement') ?>" class="navmenu">Nos services</a>
+                </li>
+                <li>
+                    <a href="#" class="navmenu" id="modalbutton">Nous contacter</a>
+                </li>
             </ul>
         </div>
         <?php //echo App\Controllers\Image::resize_image('logo.fw.png', 80, 80);  ?>
