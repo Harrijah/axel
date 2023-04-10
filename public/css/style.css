@@ -311,6 +311,7 @@ body{
   input, textarea{
     display: block;
     resize: none;
+    width: 100%;
     margin: 10px 0;
     border-radius: 5px;
     border: solid 1px var(--color01);
@@ -613,7 +614,7 @@ body{
   background-color: var(--color09);
   border-radius: 5px;
 }
-.myform02 input, .myform02 select{
+.myform02 input, .myform02 select, .demand-form input{
   width: 250px;
   height: 50px;
   border-radius: 25px;

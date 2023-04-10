@@ -91,7 +91,7 @@
 .serv-container{
     position: relative;
     grid-area: gcol02;
-    margin: auto;
+    margin: 20px auto;
     padding: 0 5%;
 }
 .les-services{
@@ -100,7 +100,7 @@
     margin: auto;
     background: rgba(255, 255, 255, 0);
 }
-.service-det01, .service-det02, .service-det03, .service-det04{
+.service-det01, .service-det02, .service-det03, .service-det04, .choisir-container{
     position: relative;
     display: flex;
     justify-content: center;
@@ -111,10 +111,10 @@
     right: 0;
     content: "\f121";
     font-family: "fontawesome";
-    font-size: 12rem;
+    font-size: 10rem;
     font-weight: bolder;
     vertical-align: top;
-    padding: 0 40px;
+    padding: 0 35px;
     border-radius: 500px;
     color: var(--color06);
     background: var(--color07);
@@ -137,7 +137,7 @@
     left: 50%;
     content: "\f108";
     font-family: "fontawesome";
-    font-size: 9rem;
+    font-size: 8rem;
     font-weight: bolder;
     vertical-align: top;
     padding: 0 60px;
@@ -148,7 +148,7 @@
 }
 .service-det04::before{
     position: absolute;
-    left: 20%;
+    left: 5%;
     content: "\f17b";
     font-family: "fontawesome";
     font-size: 8rem;
@@ -206,4 +206,62 @@
 }
 .applications{
     grid-area: applications;
+}
+
+
+/* Nous choisir */
+.choisir-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 40px auto;
+    text-align: center;
+    background: url(../image/resized/icons.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-top: solid 2px var(--color06);
+    border-bottom: solid 3px var(--color06);
+    box-shadow: 1px 2px 3px var(--color06);
+}
+.choisir-text{
+    position: relative;
+    display: inline-block;
+    width: 80%;
+    color: var(--color09);
+    padding: 40px;
+    border-radius: 5px;
+    background-color: var(--color01);
+    border-top: solid 2px var(--color06);
+    border-bottom: solid 3px var(--color06);
+    box-shadow: 1px 2px 3px var(--color06);
+}
+.choisir-image{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 20%;
+    z-index: -1;
+}
+.choisir-img01{
+    position: relative;
+    float: left;
+}
+
+/* ************************************* Formulaire interne ********************************* */
+.demand-form{
+    position: relative;
+    width: 100%;
+}
+.demand-form form{
+    position: relative;
+    min-width: 375px;
+    width: 65%;
+    max-width: 650px;
+    margin: auto;
+    padding: 20px 40px;
+    border-radius: 10px;
+    background-color: var(--color06);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
 }

@@ -24,8 +24,11 @@
 
                 <div class="service-det01">
                     <div class="sur-mesure">
-                        <h2 class="green-title02">Site sur-mesure</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt aut porro vitae a rem eaque sit quae consectetur. Et officia, dicta repellat aut quasi ad earum amet sunt sapiente quia.</p>
+                        <h2 class="green-title02">Site vitrine</h2>
+                        <p>
+                            A cette ère du digital, une présence sur le web est incontournable pour les entreprises, institutions, associations ou autres entités. A de simples fins de communication, pour faire connaître, et pour permettre à votre public ou à vos prospects de vous trouver sur internet, un simple site vitrine peut faire l'affaire. <br>
+                            Contactez-nous pour recevoir un devis en 24h.
+                        </p>
                     </div>
                     <div class="vide01"></div>
                 </div>
@@ -34,14 +37,18 @@
                     <div class="vide02"></div>
                     <div class="e-commerce">
                         <h2 class="green-title02">Site e-commerce</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam blanditiis repellat iste error voluptatum rerum iure inventore consectetur, nesciunt quidem saepe voluptatem voluptas! Ipsam nihil tempora libero sed. Perspiciatis, natus.</p>
+                        <p>
+                            Sur une année d'exercice, le coût de la conception et de la maintenance d'un site e-commerce équivaut approximativement à 10% des charges fixes pour une boutique physique. Cependant, il pourrait jouer une part toute aussi importante dans les ventes, la génération de flux dans les points de vente et le développement des chiffres d'affaires. 
+                        </p>
                     </div>
                 </div>
 
                 <div class="service-det03">
                     <div class="site-vitrine">
-                        <h2 class="green-title02">Site vitrine</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore impedit facere veniam corrupti asperiores tenetur quasi sint, harum rerum, culpa quos deleniti a nostrum totam sit ipsum, molestiae nulla necessitatibus!</p>
+                        <h2 class="green-title02">Site sur-mesure</h2>
+                        <p>
+                            Selon votre type et domaine d'activité, vous pourriez avoir des besoins spécifiques pour la conception de votre site web : gestion de planning, gestion de réservations, gestion de données, carte interactive, ... N'hésitez pas à nous contacter, nous étudierons votre projet avec plaisir avec vous.
+                        </p>
                     </div>
                     <div class="vide03"></div>
                 </div>
@@ -49,12 +56,54 @@
                 <div class="service-det04">
                     <div class="vide04"></div>
                     <div class="applications">
-                        <h2 class="green-title02">Applications web et mobile</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur nisi doloribus laudantium pariatur, nostrum sequi et similique recusandae delectus voluptates consectetur, natus explicabo! Consequatur consequuntur labore, totam repellendus architecto deserunt!</p>
+                        <h2 class="green-title02">Applications desktop et mobile</h2>
+                        <p>
+                            Boostez votre productivité avec des applications desktop spécifiques. Améliorez l'expérience de vos utilisateurs et clients avec des applications mobile. Notre équipe vous accompagne dans l'étude et la création d'applications desktop et applications pour smartphone selon votre type d'activité.
+                        </p>
                     </div>
                 </div>
 
             </div>
+
+            <section>
+                <div class="choisir-container">
+                    <div class="choisir-image">
+                        <img src="<?php //echo base_url('image/resized/icons.png') ?>" alt="" class="choisir-img01">
+                    </div>
+                    <div class="choisir-text">
+                        <h2>Pourquoi nous choisir ?</h2>
+                        <p>
+                            Notre équipe chez Axel est composée par des développeurs, marketeurs, designers, et spécialistes du digital. Nous sommes passionnés par ce que nous faisons. Un chef de projet est désigné pour prendre en charge votre besoin, et sera votre interlocuteur durant toute la réalisation du projet. <br><br>
+                            Ce qui nous différencie ? Nous sommes à l'écoute. Nous sommes à votre écoute, et nous analysons votre besoin dans ses moindres détails, afin d'apporter des conseils, des solutions techniques, selon les réalités sur terrain, mais aussi de notre expertise dans le domaine. 
+                            Avec Axel, vous avez la certitude d'une bonne prise en main et d'une garantie sur le dicton : "Satisfait ou remboursé".
+                        </p>
+                    </div>
+
+
+
+                </div>
+                
+                <div class="demand-form">
+                    <h2 class="green-title02" style="text-align:center;">Demander une information</h2>
+                    <form action="" method="post">
+                        <label for="nom">Nom</label>
+                        <input type="text" name="nom" id="">
+                        
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="">
+                        
+                        <label for="objet">Objet</label>
+                        <input type="text" name="objet" id="">
+
+                        
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Votre message, ici ..."></textarea>
+                        <input type="submit" value="Envoyer">
+                    </form>
+                </div>
+            </section>
+
+
+
         </div>
         
         <div class="servcol03">
@@ -63,5 +112,6 @@
             </div>
         </div>
     </div>
+    
     
 </section>
