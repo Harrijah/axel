@@ -2,10 +2,9 @@
     position: relative;
     display: flex;
     align-items: center;
-    justify-content:right;
+    justify-content: right;
     clip-path: polygon(0 0, 100% 0, 98% 79%, 15% 100%, 0 100%);
     width: 100%;
-    height: 150px;
     background: var(--color10);
 }
 .service-title{
@@ -14,10 +13,18 @@
     color: var(--color09);
     font-family: 'Rajdhani', sans-serif;
 }
+.facode{
+    position: relative;
+    font-weight: 15rem;
+    color: var(--color09);
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: var(--color01);
+}
 .picto{
     position: relative;
     width: 29%;
-    background: red;
 }
 .service-title h1{
     position: relative;
@@ -55,7 +62,6 @@
     padding: 15px 10px;
     font-size: 1.5rem;
     font-weight: bold;
-    /* text-decoration: underline; */
     color: var(--color02);
     background: var(--color09);
 }
@@ -90,43 +96,110 @@
 }
 .les-services{
     position: relative;
-    display: grid;
-    grid-template-columns: 40% 20% 40%;
-    grid-template-rows: auto auto auto auto;
-    grid-template-areas: 
-    "sur-mesure sur-mesure vide01"
-    "vide02 e-commerce e-commerce"
-    "site-vitrine site-vitrine vide03"
-    "vide04 applications applications"
-    ;
+    display: block;
     margin: auto;
     background: rgba(255, 255, 255, 0);
 }
-.sur-mesure, .e-commerce, .site-vitrine, .applications{
+.service-det01, .service-det02, .service-det03, .service-det04{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.service-det01::before{
+    position: absolute;
+    right: 0;
+    content: "\f121";
+    font-family: "fontawesome";
+    font-size: 12rem;
+    font-weight: bolder;
+    vertical-align: top;
+    padding: 0 40px;
+    border-radius: 500px;
+    color: var(--color06);
+    background: var(--color07);
+    z-index: -1;
+}
+.service-det02::before{
+    position: absolute;
+    left: 20%;
+    content: "\f07a";
+    font-family: "fontawesome";
+    font-size: 10rem;
+    font-weight: bold;
+    vertical-align: top;
+    color: var(--color07);
+    transform: rotate(345deg);
+    z-index: -1;
+}
+.service-det03::before{
+    position: absolute;
+    left: 50%;
+    content: "\f108";
+    font-family: "fontawesome";
+    font-size: 9rem;
+    font-weight: bolder;
+    vertical-align: top;
+    padding: 0 60px;
+    /* border-radius: 500px; */
+    color: var(--color06);
+    background: var(--color07);
+    z-index: -1;
+}
+.service-det04::before{
+    position: absolute;
+    left: 20%;
+    content: "\f17b";
+    font-family: "fontawesome";
+    font-size: 8rem;
+    font-weight: bold;
+    vertical-align: top;
+    padding: 0 45px;
+    border-radius: 500px;
+    color: var(--color06);
+    background: var(--color07);
+    transform: rotate(345deg);
+    z-index: -1;
+}
+.sur-mesure, .site-vitrine{
+    position: relative;
     margin: 10px;
     padding: 20px;
+    width: 60%;
+    background: var(--color06);
+    /* background: rgba(255, 255, 255, 0.40); */
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px; */
+}
+.e-commerce, .applications{
+    position: relative;
+    margin: 10px;
+    padding: 20px;
+    width: 60%;
     background: var(--color06);
     /* background: rgba(255, 255, 255, 0.40); */
     /* box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px; */
 }
 .vide01{
-    grid-area: vide01;
+    position: relative;
+    width: 40%;
+    /* height: 100px;
+    background: blue; */
 }
 .vide02{
-    grid-area: vide02;
-    /* background: url(../image/resized/magician.fw.png) center/cover; */
+    position: relative;
+    width: 40%;
+    height: 200px;
 }
 .vide03{
-    grid-area: vide03;
+    position: relative;
+    width: 40%;
 }
 .vide04{
-    grid-area: vide04;
+    position: relative;
+    width: 40%;
 }
 .sur-mesure{
     grid-area: sur-mesure;
-}
-.e-commerce{
-    grid-area: e-commerce;
 }
 .site-vitrine{
     grid-area: site-vitrine;

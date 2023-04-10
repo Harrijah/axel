@@ -30,6 +30,7 @@ body{
     --color08: #1641AB;
     --color09: #F7F8F6;
     --color10: #27686ad8;
+    --color11: rgba(255, 255, 255, 0.849);
   }
   .h2title{
     position: relative;
