@@ -74,7 +74,7 @@
     text-decoration: none;
     transition: 1s;
 }
-.servcol01 ul li a:hover, .active{
+.servcol01 ul li a:hover, .development, .marketing, .design, .print{
     background: var(--color01);
 }
 .servcol03{

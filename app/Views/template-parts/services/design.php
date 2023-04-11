@@ -1,4 +1,3 @@
-<?php $uri = service('uri'); ?>
 <section>
     <div class="service-back">
         <div class="service-title">
@@ -12,10 +11,10 @@
             <div class="mask">
                 <ul>
                     <li class="serv-title">Nos services</li>
-                    <li><a href="<?php echo base_url('development'); ?>" class="<?= ($uri->getSegment(1) === "development") ? 'active' : null; ?>">Développement web</a></li>
-                    <li><a href="<?php echo base_url('marketing'); ?>" class="<?= ($uri->getSegment(1) === "marketing") ? 'active' : null; ?>">Marketing digital</a></li>
-                    <li><a href="<?php echo base_url('design'); ?>" class="<?= ($uri->getSegment(1) === "design") ? 'active' : null; ?>">Création graphique</a></li>
-                    <li><a href="<?php echo base_url('print'); ?>"class="<?= ($uri->getSegment(1) === "print") ? 'active' : null; ?>">Crétaion de supports</a></li>
+                    <li><a href="<?php echo base_url('development'); ?>" class="">Développement web</a></li>
+                    <li><a href="<?php echo base_url('marketing'); ?>" class="">Marketing digital</a></li>
+                    <li><a href="<?php echo base_url('design'); ?>" class="<?php echo $maclasse; ?>">Création graphique</a></li>
+                    <li><a href="<?php echo base_url('print'); ?>"class="">Crétaion de supports</a></li>
                 </ul>
             </div>
         </div>

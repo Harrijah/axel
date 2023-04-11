@@ -5,19 +5,24 @@
     {
         public function development()
         {
+            $uri = service('uri');
+            $lien = $uri->getSegment(1); 
             $data = [
-                'tile' => "Développement web et applications",
+                'title' => "Développement web et applications",
+                'maclasse' => $lien,
             ];
             return view('template-parts/header', $data)
             . view('template-parts/services/development')
-            // . view('template-parts/services/choisir')
             . view('template-parts/footer');
         }
 
         public function marketing()
         {
+            $uri = service('uri');
+            $lien = $uri->getSegment(1);
             $data = [
-                'tile' => "Webmarketing",
+                'title' => "Webmarketing",
+                'maclasse' => $lien,
             ];
             return view('template-parts/header', $data)
             . view('template-parts/services/marketing')
@@ -25,12 +30,11 @@
         }
         public function design()
         {
-            // $uri = service('uri');
-            // if ($uri->getSegment(1) === 'development') {
-            //     echo "ok";
-            // }
+            $uri = service('uri');
+            $lien = $uri->getSegment(1);
             $data = [
-                'tile' => "Design et création graphique",
+                'title' => 'Design et création graphique',
+                'maclasse' => $lien,
             ];
             return view('template-parts/header', $data)
             . view('template-parts/services/design')
@@ -38,8 +42,11 @@
         }
         public function print()
         {
+            $uri = service('uri');
+            $lien = $uri->getSegment(1);
             $data = [
-                'tile' => "Création de supports et PLV",
+                'title' => "Création de supports et PLV",
+                'maclasse' => $lien,
             ];
             return view('template-parts/header', $data)
             . view('template-parts/services/print')
