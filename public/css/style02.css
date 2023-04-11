@@ -46,6 +46,7 @@
     ;
 }
 .servcol01{
+    position: relative;
     grid-area: gcol01;
     background: var(--color02);
 }
@@ -71,8 +72,9 @@
     padding: 20px 10px;
     color: var(--color09);
     text-decoration: none;
+    transition: 1s;
 }
-.servcol01 ul li a:hover{
+.servcol01 ul li a:hover, .active{
     background: var(--color01);
 }
 .servcol03{
@@ -254,6 +256,16 @@
     position: relative;
     width: 100%;
 }
+.clientname::after{
+    content:"\f0e0";
+    position: absolute;
+    right: -7%;
+    top: -11%;
+    font-family: "fontawesome";
+    font-size: 6rem;
+    color: var(--color02);
+    transform: rotate(45deg)
+}
 .demand-form form{
     position: relative;
     min-width: 375px;
@@ -262,6 +274,14 @@
     margin: auto;
     padding: 20px 40px;
     border-radius: 10px;
-    background-color: var(--color06);
+    background-color: var(--color10);
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
+}
+.demand-form form label{
+    margin: 8px 0 0 0;
+    padding-left: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color09);
+
 }

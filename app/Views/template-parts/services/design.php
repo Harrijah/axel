@@ -1,7 +1,8 @@
+<?php $uri = service('uri'); ?>
 <section>
     <div class="service-back">
         <div class="service-title">
-            <h1>Développement web <i class="fa fa-laptop facode"></i></h1>
+            <h1>Création graphique <i class="fa fa-laptop facode"></i></h1>
         </div>
         <div class="picto"></div>
     </div>
@@ -11,10 +12,10 @@
             <div class="mask">
                 <ul>
                     <li class="serv-title">Nos services</li>
-                    <li><a href="">Développement web</a></li>
-                    <li><a href="">Marketing digital</a></li>
-                    <li><a href="">Création graphique</a></li>
-                    <li><a href="">Crétaion de supports</a></li>
+                    <li><a href="<?php echo base_url('development'); ?>" class="<?= ($uri->getSegment(1) === "development") ? 'active' : null; ?>">Développement web</a></li>
+                    <li><a href="<?php echo base_url('marketing'); ?>" class="<?= ($uri->getSegment(1) === "marketing") ? 'active' : null; ?>">Marketing digital</a></li>
+                    <li><a href="<?php echo base_url('design'); ?>" class="<?= ($uri->getSegment(1) === "design") ? 'active' : null; ?>">Création graphique</a></li>
+                    <li><a href="<?php echo base_url('print'); ?>"class="<?= ($uri->getSegment(1) === "print") ? 'active' : null; ?>">Crétaion de supports</a></li>
                 </ul>
             </div>
         </div>
@@ -84,19 +85,17 @@
                 </div>
                 
                 <div class="demand-form">
-                    <h2 class="green-title02" style="text-align:center;">Demander une information</h2>
-                    <form action="" method="post">
-                        <label for="nom">Nom</label>
-                        <input type="text" name="nom" id="">
-                        
-                        <label for="email">Email</label>
+                    <h2 class="green-title02" style="text-align:center;">Poser une question</h2>
+                    <form action="" method="post" class="clientname">
+                        <label for="nom">Votre nom</label>
+                        <input type="text" name="nom" id=""  class="myname">
+                                                
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Votre message, ici ..."></textarea>
+
+                        <label for="email">Votre e-mail</label>
                         <input type="email" name="email" id="">
                         
-                        <label for="objet">Objet</label>
-                        <input type="text" name="objet" id="">
 
-                        
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Votre message, ici ..."></textarea>
                         <input type="submit" value="Envoyer">
                     </form>
                 </div>

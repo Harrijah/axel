@@ -32,18 +32,24 @@
             </a>
         </div>
         <div class="menu-section">
-            <!-- <div class="testt"></div> -->
-            <ul class="menu">
-                <li>
-                    <a href="<?php echo base_url('developpement') ?>" class="navmenu">Nos services</a>
+            <ul class="">
+                <li class="menu dropmoth">
+                    <span class="menu-services">Nos services</span>
+                    <ul class="menu-drop">
+                        <li class="deroul-menu"><a href="<?php echo base_url('development') ?>" class="menubutton">Développement web & app</a></li>
+                        <li class="deroul-menu"><a href="<?php echo base_url('marketing') ?>" class="menubutton">Marketing digital</a></li>
+                        <li class="deroul-menu"><a href="<?php echo base_url('design') ?>" class="menubutton">Création graphique</a></li>
+                        <li class="deroul-menu"><a href="<?php echo base_url('print') ?>" class="menubutton">Supports et PLV</a></li>
+                    </ul>
                 </li>
-                <li>
-                    <a href="#" class="navmenu" id="modalbutton">Nous contacter</a>
+                <li class="menu">
+                    <a href="#" class="menubutton" id="modalbutton">Nous contacter</a>
                 </li>
             </ul>
         </div>
         <?php //echo App\Controllers\Image::resize_image('logo.fw.png', 80, 80);  ?>
     </nav>
+    
     
 
 
