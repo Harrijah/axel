@@ -1,7 +1,7 @@
 <section>
     <div class="service-back">
         <div class="service-title">
-            <h1>Confection de supports <i class="fa fa-laptop facode"></i></h1>
+            <h1>Confection de supports <i class="fa fa-flag-o facode"></i></h1>
         </div>
         <div class="picto"></div>
     </div>
@@ -24,41 +24,20 @@
 
                 <div class="service-det01">
                     <div class="sur-mesure">
-                        <h2 class="green-title02">Site vitrine</h2>
+                        <h2 class="green-title02">Confection de plaques publicitaires</h2>
                         <p>
-                            A cette ère du digital, une présence sur le web est incontournable pour les entreprises, institutions, associations ou autres entités. A de simples fins de communication, pour faire connaître, et pour permettre à votre public ou à vos prospects de vous trouver sur internet, un simple site vitrine peut faire l'affaire. <br>
-                            Contactez-nous pour recevoir un devis en 24h.
+                            Nous confections vos plaques publicitaires selon votre besoin : en tôle, panneau luminaire, etc. et selon le format désiré. Contactez-nous dès maintenant afin d'échanger sur votre besoin et profiter de nos conseils techniques. <br>
                         </p>
                     </div>
-                    <div class="vide01"></div>
+                    <div class="print01"></div>
                 </div>
 
                 <div class="service-det02">
-                    <div class="vide02"></div>
+                    <div class="print02"></div>
                     <div class="e-commerce">
-                        <h2 class="green-title02">Site e-commerce</h2>
+                        <h2 class="green-title02">Confection de PLV et supports de ventes</h2>
                         <p>
-                            Sur une année d'exercice, le coût de la conception et de la maintenance d'un site e-commerce équivaut approximativement à 10% des charges fixes pour une boutique physique. Cependant, il pourrait jouer une part toute aussi importante dans les ventes, la génération de flux dans les points de vente et le développement des chiffres d'affaires. 
-                        </p>
-                    </div>
-                </div>
-
-                <div class="service-det03">
-                    <div class="site-vitrine">
-                        <h2 class="green-title02">Site sur-mesure</h2>
-                        <p>
-                            Selon votre type et domaine d'activité, vous pourriez avoir des besoins spécifiques pour la conception de votre site web : gestion de planning, gestion de réservations, gestion de données, carte interactive, ... N'hésitez pas à nous contacter, nous étudierons votre projet avec plaisir avec vous.
-                        </p>
-                    </div>
-                    <div class="vide03"></div>
-                </div>
-
-                <div class="service-det04">
-                    <div class="vide04"></div>
-                    <div class="applications">
-                        <h2 class="green-title02">Applications desktop et mobile</h2>
-                        <p>
-                            Boostez votre productivité avec des applications desktop spécifiques. Améliorez l'expérience de vos utilisateurs et clients avec des applications mobile. Notre équipe vous accompagne dans l'étude et la création d'applications desktop et applications pour smartphone selon votre type d'activité.
+                            Les PLV représentent un enjeu stratégique sur l'aspect financier et impact de la communication. Profitez de notre savoir-faire et de notre bon rapport qualité-prix dans la conception de vos PLV. Nous combinons savoir-faire et efficacité dans la réalisation de vos différents supports marketing. Contactez-nous afin d'échanger sur la façon dont nous pouvons vous accompagner dans cette démarche.
                         </p>
                     </div>
                 </div>

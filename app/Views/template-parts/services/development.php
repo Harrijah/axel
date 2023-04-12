@@ -30,11 +30,11 @@
                             Contactez-nous pour recevoir un devis en 24h.
                         </p>
                     </div>
-                    <div class="vide01"></div>
+                    <div class="dev01"></div>
                 </div>
 
                 <div class="service-det02">
-                    <div class="vide02"></div>
+                    <div class="dev02"></div>
                     <div class="e-commerce">
                         <h2 class="green-title02">Site e-commerce</h2>
                         <p>
@@ -50,11 +50,11 @@
                             Selon votre type et domaine d'activité, vous pourriez avoir des besoins spécifiques pour la conception de votre site web : gestion de planning, gestion de réservations, gestion de données, carte interactive, ... N'hésitez pas à nous contacter, nous étudierons votre projet avec plaisir avec vous.
                         </p>
                     </div>
-                    <div class="vide03"></div>
+                    <div class="dev03"></div>
                 </div>
 
                 <div class="service-det04">
-                    <div class="vide04"></div>
+                    <div class="dev04"></div>
                     <div class="applications">
                         <h2 class="green-title02">Applications desktop et mobile</h2>
                         <p>

@@ -1,7 +1,7 @@
 <section>
     <div class="service-back">
         <div class="service-title">
-            <h1>Création graphique <i class="fa fa-laptop facode"></i></h1>
+            <h1>Création graphique <i class="fa fa-pencil facode"></i></h1>
         </div>
         <div class="picto"></div>
     </div>
@@ -24,41 +24,40 @@
 
                 <div class="service-det01">
                     <div class="sur-mesure">
-                        <h2 class="green-title02">Site vitrine</h2>
+                        <h2 class="green-title02">Design et charte graphique</h2>
                         <p>
-                            A cette ère du digital, une présence sur le web est incontournable pour les entreprises, institutions, associations ou autres entités. A de simples fins de communication, pour faire connaître, et pour permettre à votre public ou à vos prospects de vous trouver sur internet, un simple site vitrine peut faire l'affaire. <br>
-                            Contactez-nous pour recevoir un devis en 24h.
+                            Afin de réussir dans la communication, votre entreprise doit avoir une image unique et cohérente qui reflète vos valeurs et vos ambitions. C'est ainsi que nous vous proposons nos services dans l'élaboration de votre charte graphique. Création ou refonte de votre logo, illustrations, web design, font entre autres partie de nos spécialités.<br>
                         </p>
                     </div>
-                    <div class="vide01"></div>
+                    <div class="design01"></div>
                 </div>
 
                 <div class="service-det02">
-                    <div class="vide02"></div>
+                    <div class="design02"></div>
                     <div class="e-commerce">
-                        <h2 class="green-title02">Site e-commerce</h2>
+                        <h2 class="green-title02">Création de visuels</h2>
                         <p>
-                            Sur une année d'exercice, le coût de la conception et de la maintenance d'un site e-commerce équivaut approximativement à 10% des charges fixes pour une boutique physique. Cependant, il pourrait jouer une part toute aussi importante dans les ventes, la génération de flux dans les points de vente et le développement des chiffres d'affaires. 
+                            Nous répondons avec plaisir à vos demandes pour tous vos besoins ponctuels ou réguliers en création de visuels. A partir de votre charte graphique, d'après votre vision, et dans les règles de l'art, nous réalisons vos bannières, visuels publicitaires, brochures, carte de visite, etc. Nous vous proposons également nos services dans l'integration de maquettes et mise en page de documents sur InDesign.
                         </p>
                     </div>
                 </div>
 
                 <div class="service-det03">
                     <div class="site-vitrine">
-                        <h2 class="green-title02">Site sur-mesure</h2>
+                        <h2 class="green-title02">Montage vidéo et animation 3D</h2>
                         <p>
-                            Selon votre type et domaine d'activité, vous pourriez avoir des besoins spécifiques pour la conception de votre site web : gestion de planning, gestion de réservations, gestion de données, carte interactive, ... N'hésitez pas à nous contacter, nous étudierons votre projet avec plaisir avec vous.
+                            Notre équipe est composée de spécialistes dans le traitement d'images, de vidéos, motion design et l'animation 3D. Nous accordons un respect strict dans k'application de vos consignes tout en étant force de proposition dans les éventuels axes d'amélioration sur le rendu final. Contactez-nous afin d'étudier ensemble votre projet.
                         </p>
                     </div>
-                    <div class="vide03"></div>
+                    <div class="design03"></div>
                 </div>
 
                 <div class="service-det04">
-                    <div class="vide04"></div>
+                    <div class="design04"></div>
                     <div class="applications">
-                        <h2 class="green-title02">Applications desktop et mobile</h2>
+                        <h2 class="green-title02">Plans architecturaux</h2>
                         <p>
-                            Boostez votre productivité avec des applications desktop spécifiques. Améliorez l'expérience de vos utilisateurs et clients avec des applications mobile. Notre équipe vous accompagne dans l'étude et la création d'applications desktop et applications pour smartphone selon votre type d'activité.
+                            Nous travaillons en étroite collaboration avec nos clients pour créer des plans architecturaux sur mesure, répondant à leurs besoins spécifiques et respectant les normes en vigueur. Nous prenons en compte tous les aspects du projet, depuis les contraintes techniques jusqu'aux préférences esthétiques de nos clients. Nous sommes également en mesure de réaliser des rendus 3D pour une visualisation plus réaliste de votre projet. 
                         </p>
                     </div>
                 </div>

@@ -1,7 +1,7 @@
 <section>
     <div class="service-back">
         <div class="service-title">
-            <h1>Marketing digital <i class="fa fa-laptop facode"></i></h1>
+            <h1>Marketing digital <i class="fa fa-chart-line facode"></i></h1>
         </div>
         <div class="picto"></div>
     </div>
@@ -24,41 +24,42 @@
 
                 <div class="service-det01">
                     <div class="sur-mesure">
-                        <h2 class="green-title02">Site vitrine</h2>
+                        <h2 class="green-title02">Audit et consulting</h2>
                         <p>
-                            A cette ère du digital, une présence sur le web est incontournable pour les entreprises, institutions, associations ou autres entités. A de simples fins de communication, pour faire connaître, et pour permettre à votre public ou à vos prospects de vous trouver sur internet, un simple site vitrine peut faire l'affaire. <br>
-                            Contactez-nous pour recevoir un devis en 24h.
+                            Les parties "analytique" et "stratégique" sont une étape importante avant de se lancer dans un projet. C'est dans ce contexte que nous vous proposons nos compétences dans l'étude de marché et l'étude de faisablilité de votre projet. Nous mettons notre savoir-faire à votre service afin d'analyser votre environnement (marché, concurrence, potentiel, etc.), de déterminer l'opportunité qui se présente à votre entreprise sur le web et de vous conseiller dans les actions.
                         </p>
                     </div>
-                    <div class="vide01"></div>
+                    <div class="market01"></div>
                 </div>
 
                 <div class="service-det02">
-                    <div class="vide02"></div>
+                    <div class="market02"></div>
                     <div class="e-commerce">
-                        <h2 class="green-title02">Site e-commerce</h2>
+                        <h2 class="green-title02">Référencement naturel et/ou payant</h2>
                         <p>
-                            Sur une année d'exercice, le coût de la conception et de la maintenance d'un site e-commerce équivaut approximativement à 10% des charges fixes pour une boutique physique. Cependant, il pourrait jouer une part toute aussi importante dans les ventes, la génération de flux dans les points de vente et le développement des chiffres d'affaires. 
+                            Nous vous accompagnons dans la promotion de votre activité et de votre site sur le web. Nous disposons de plusieurs années d'expériences dans le référencement naturel de sites web, l'inbound marketing, ainsi que dans la mise en place de campagnes publicitaires payantes sur les divers moteurs de recherche ou sur les réseaux sociaux. <br>
+                            Nous vous conseillons sur la budgetisation de votre référencement, et prenons en charge la gestion du budget allouée aux diverses campagnes afin d'optimiser leur rentabilité. 
                         </p>
                     </div>
                 </div>
 
                 <div class="service-det03">
                     <div class="site-vitrine">
-                        <h2 class="green-title02">Site sur-mesure</h2>
+                        <h2 class="green-title02">Gestion des réseaux sociaux</h2>
                         <p>
-                            Selon votre type et domaine d'activité, vous pourriez avoir des besoins spécifiques pour la conception de votre site web : gestion de planning, gestion de réservations, gestion de données, carte interactive, ... N'hésitez pas à nous contacter, nous étudierons votre projet avec plaisir avec vous.
+                            La communication fait partie de noter coeur de métier. Faites confiance à notre équipe de community managers pour la gestion de vos pages sur les réseaux sociaux : LinkedIn, Facebook, Instagram, TikTok. Nos compétences dans le marketing nous permettent de créer des publications pertinentes pour votre cible et adaptées à vos différents segments de clients. <br>
+                            Nous pouvons également assurer la modération de vos pages et vous fournir en aval, un rapport complet mensuel.
                         </p>
                     </div>
-                    <div class="vide03"></div>
+                    <div class="market03"></div>
                 </div>
 
                 <div class="service-det04">
-                    <div class="vide04"></div>
+                    <div class="market04"></div>
                     <div class="applications">
-                        <h2 class="green-title02">Applications desktop et mobile</h2>
+                        <h2 class="green-title02">Outbond marketing</h2>
                         <p>
-                            Boostez votre productivité avec des applications desktop spécifiques. Améliorez l'expérience de vos utilisateurs et clients avec des applications mobile. Notre équipe vous accompagne dans l'étude et la création d'applications desktop et applications pour smartphone selon votre type d'activité.
+                            Différents leviers peuvent être utilisés dans le marketing digital afin d'atteindre ses objectifs. Nous proposons différentes techniques et d'autres services comme le Growth Hacking, la gestion de Newsletter, l'emailing publicitaire afin de vous accompagner dans l'atteinte de vos objectifs.
                         </p>
                     </div>
                 </div>
