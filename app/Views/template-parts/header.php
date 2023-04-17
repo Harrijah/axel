@@ -35,6 +35,8 @@
         </div>
         <div class="menu-section">
             <ul class="">
+                <li class="menu"><a href="<?php echo base_url('/') ?>" class="menubutton">Accueil</a></li>
+                <li class="menu"><a href="<?php echo base_url('/') ?>" class="menubutton">A propos de nous</a></li>
                 <li class="menu dropmoth">
                     <span class="menu-services">Nos services</span>
                     <ul class="menu-drop">
@@ -43,6 +45,9 @@
                         <li class="deroul-menu"><a href="<?php echo base_url('design') ?>" class="menubutton">Création graphique</a></li>
                         <li class="deroul-menu"><a href="<?php echo base_url('print') ?>" class="menubutton">Supports et PLV</a></li>
                     </ul>
+                </li>
+                <li class="menu">
+                    <a href="#" class="menubutton">Blog</a>
                 </li>
                 <li class="menu">
                     <a href="#" class="menubutton" id="modalbutton">Nous contacter</a>

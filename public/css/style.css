@@ -151,6 +151,7 @@ body{
       color: var(--color09);
       height: 100%;
       line-height: 75px;
+      /* width: 120px; */
     }
     .menu a{
       text-decoration: none;

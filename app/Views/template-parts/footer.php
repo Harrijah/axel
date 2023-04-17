@@ -34,11 +34,10 @@
         <div class="footer-menu">
             <h3>Nos services</h3>
             <ul>
-                <li><a href="#" class="footerlink">Développement web</a></li>
-                <li><a href="#" class="footerlink">Développement logiciel & application</a></li>
-                <li><a href="#" class="footerlink">Webmarketing</a></li>
-                <li><a href="#" class="footerlink">Graphic design</a></li>
-                <li><a href="#" class="footerlink">Supports de communication</a></li>
+                <li><a href="<?php echo base_url('development'); ?>" class="footerlink">Développement web</a></li>
+                <li><a href="<?php echo base_url('marketing'); ?>" class="footerlink">Webmarketing</a></li>
+                <li><a href="design" class="footerlink">Graphic design</a></li>
+                <li><a href="print" class="footerlink">Supports de communication</a></li>
             </ul>
         </div>
         <div class="footer-contact">
