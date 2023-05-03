@@ -50,8 +50,6 @@
                 <a href="#" class="bouton01">En savoir plus</a>
             </div>
         </div>
-        <!-- <div class="nonecol01"></div>
-        <div class="nonecol02"></div> -->
 
         <div class="news01">
             <div>

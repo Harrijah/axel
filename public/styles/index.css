@@ -12,6 +12,9 @@
   box-sizing: border-box;
 }
 
+body {
+  background: rgba(71, 94, 34, 0.0392156863);
+}
 body li {
   list-style: none;
 }
@@ -109,18 +112,30 @@ nav:nth-child(1) ul .menu .menu-drop li a {
   justify-content: center;
   align-items: center;
 }
+.principal-ban .principal01 h1 {
+  position: relative;
+  text-align: right;
+  font-size: 4rem;
+  line-height: 50px;
+  font-family: "Rajdhani", sans-serif;
+}
 .principal-ban .principal02 {
   grid-area: l1b;
+}
+.principal-ban .product-card01, .principal-ban .product-card02, .principal-ban .product-card03, .principal-ban .product-card04 {
+  padding: 0 5%;
+}
+.principal-ban .product-card01 h2, .principal-ban .product-card02 h2, .principal-ban .product-card03 h2, .principal-ban .product-card04 h2 {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 1.5rem;
+  color: #27686A;
 }
 .principal-ban .product-card01 {
   grid-area: l2a;
 }
 .principal-ban .product-card02 {
   grid-area: l2b;
-}
-.principal-ban .product-card02 > div {
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 .principal-ban .product-card03 {
@@ -129,6 +144,43 @@ nav:nth-child(1) ul .menu .menu-drop li a {
 .principal-ban .product-card04 {
   grid-area: l3d;
 }
+.principal-ban .backme {
+  color: white;
+  background-color: #2D9A4D;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+}
+.principal-ban .backme02 {
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 20px;
+  border-radius: 0 0 5px 5px;
+  -webkit-backdrop-filter: blur(1.5rem);
+          backdrop-filter: blur(1.5rem);
+  background-color: var(--color07);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
+}
 .principal-ban .news01 {
   grid-area: l4a;
+  padding: 20px;
+  border-radius: 20px;
+  border-image-slice: 2;
+  border-image-width: 4px;
+  -o-border-image: linear-gradient(235deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), var(--color04) 70%);
+     border-image: linear-gradient(235deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), var(--color04) 70%);
+  background: linear-gradient(95deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0) 90%);
+}
+.principal-ban .bouton01 {
+  position: relative;
+  text-decoration: none;
+  margin: 10px 0;
+  padding: 10px 15px;
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0) 0px 20px 30px;
+  animation: 0.9s;
+  color: var(--color01);
+  border: solid 2px var(--color01);
 }/*# sourceMappingURL=index.css.map */

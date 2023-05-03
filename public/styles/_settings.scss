@@ -25,6 +25,7 @@
   box-sizing: border-box;
 }
 body{
+  background: $color06;
   li{
     list-style: none;
   }
@@ -46,4 +47,13 @@ body{
   display: flex;
   justify-content: $param;
   align-items: center;
+}
+@mixin bouton{
+  position: relative;
+  text-decoration: none;
+  margin: 10px 0;
+  padding: 10px 15px;
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0) 0px 20px 30px;    
+  animation: 0.9s;
 }

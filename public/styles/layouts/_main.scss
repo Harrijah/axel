@@ -21,18 +21,34 @@
         grid-area: l1a;
         height: 50vh;
         @include centerChild;
+
+        h1 {
+            position: relative;
+            text-align: right;
+            font-size: 4rem;
+            line-height: 50px;
+            font-family: 'Rajdhani', sans-serif;
+          }
     }
     .principal02{
         grid-area: l1b;
+    }
+    .product-card01, .product-card02, .product-card03, .product-card04{
+        padding: 0 5%;
+        h2{
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1.5rem;
+            color: $color02;
+        }
     }
     .product-card01{
         grid-area: l2a;
     }
     .product-card02{
         grid-area: l2b;
-        & > div{
-            @include centerChild;
-        }
+        display: flex;
+        align-items: center;
+        
     }
     .product-card03{
         grid-area: l3c;
@@ -40,8 +56,37 @@
     .product-card04{
         grid-area: l3d;
     }
+    
+    .backme{
+        color: white;
+        background-color: $color01;
+        height: fit-content;
+        padding: 20px;
+        border-radius: 30px;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+      }
+      .backme02{
+        height: fit-content;
+        padding: 20px;
+        border-radius: 0 0 5px 5px;
+        backdrop-filter: blur(1.5rem);
+        background-color: var(--color07);
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
+      }
+
     .news01{
         grid-area: l4a;
+        padding: 20px;
+        border-radius: 20px;
+        border-image-slice: 2;
+        border-image-width: 4px;
+        border-image: linear-gradient(235deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), var(--color04) 70% );
+        background: linear-gradient(95deg, rgba(255, 255, 255, 0.70), rgba(255, 255, 255, 0) 90%);
     }
+    .bouton01{
+        @include bouton;
+        color: var(--color01);
+        border: solid 2px var(--color01);
+      }
 
 }

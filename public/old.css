@@ -68,7 +68,7 @@ body{
   
 /* *********************************************** Boutons ****************************************************** */
   .bouton01{
-    /* @include bouton; */
+    @include bouton;
     color: var(--color01);
     border: solid 2px var(--color01);
   }
