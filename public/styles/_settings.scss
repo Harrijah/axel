@@ -1,135 +1,49 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Rajdhani&display=swap');
+  $color01: #2D9A4D;
+  $color02: #27686A; 
+  $color03: #2D9A4D;
+  $color04: #27686A;
+  $color05: #213586;
+  $color06: #475e220a;
+  $color07: rgba(255, 255, 255, 0.50);
+  $color08: #1641AB;
+  $color09: #F7F8F6;
+  $color10: #27686ad8;
+  $color11: rgba(255, 255, 255, 0.849);
 
-:root {
-    --color01: #2D9A4D;
-    --color02: #27686A; 
-    --color03: #2D9A4D;
-    --color04: #27686A;
-    --color05: #213586;
-    --color06: #475e220a;
-    --color07: rgba(255, 255, 255, 0.50);
-    --color08: #1641AB;
-    --color09: #F7F8F6;
-    --color10: #27686ad8;
-    --color11: rgba(255, 255, 255, 0.849);
-  }
-
-*{
-    margin: 0;
-    padding: 0;
+@font-face {
+  font-family: Pacifico;
+  src: url(./fonts/Pacifico-Regular.ttf);
 }
-
+@font-face {
+  font-family: Rajdhani;
+  src: url(./fonts/Rajdhani-Light.ttf);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body{
-    background-color: var(--color06);
-    a{
-        text-decoration: none;
-        &:hover{
-            text-decoration: none;
-        }
+  li{
+    list-style: none;
+  }
+  a{
+    text-decoration: none;
+    color: $color02;
+    &:hover{
+      color: $color01;
+      text-decoration: none;
     }
   }
-
-
-@mixin bouton{
-    position: relative;
-    text-decoration: none;
-    margin: 10px 0;
-    padding: 10px 15px;
-    border-radius: 50px;
-    box-shadow: rgba(0, 0, 0, 0) 0px 20px 30px;    
-    animation: 0.9s;
 }
-@mixin center_topleft{
-    position: relative;
-    display: block;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+@mixin centerChild{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-@mixin textcard{
-    position: relative;
-    text-align: center;
-    margin: 10px;
-    padding: 10px;
+@mixin centerChildren($param){
+  display: flex;
+  justify-content: $param;
+  align-items: center;
 }
-
-
-/* *************************************************** spacer ******************************************************* */
-.spacer{
-    width: 100%;
-    height: 100px;
-  }
-
-/* *************************************************** title ******************************************************* */
-.h2title{
-    position: relative;
-  }
-  .green-title, .green-title02, .green-title-x{
-    color: var(--color04);
-    text-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-  }
-  .green-title::before{
-    position: absolute;
-    content: "";
-    width: 200px;
-    top: 40px;
-    clip-path: polygon(25% 0%, 100% 0%, 84% 10%, 0 10%);
-    background: linear-gradient(90deg, var(--color04), var(--color01) 50%);
-  
-  }
-  
-/* *********************************************** Boutons ****************************************************** */
-  .bouton01{
-    @include bouton;
-    color: var(--color01);
-    border: solid 2px var(--color01);
-  }
-  .bouton01:hover, 
-  #mydemand:hover{
-    color: var(--color02);
-    background: var(--color07);
-    border: solid 2px var(--color02);
-    box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 5px;
-  }
-
-  .bouton02 {
-    @include bouton;
-    color: white;
-    border: solid 2px white;
-  }
-  .bouton02:hover{
-    color: var(--color02);
-    background: var(--color09);
-    border: solid 2px var(--color02);
-    box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 5px;
-  }
-  .bouton03, 
-  #mydemand  {
-    position: relative;
-    width: 15vw;
-    left: 50%;
-    transform: translateX(-50%);
-    text-decoration: none;
-    color: var(--color01);
-    margin: 15px 0;
-    padding: 10px 15px;
-    border: solid 2px var(--color01);
-    border-radius: 40px;
-  }
-  .bouton03:hover{
-    text-decoration: none;
-    color: var(--color02);
-    background: var(--color09);
-    border: solid 2px var(--color02);
-    box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 5px;
-  }
-/* *********************************************** Separator *******************************************************/
-  .separator{
-    position: relative;
-    display: block;
-    margin: auto;
-    border-bottom: solid 3px var(--color01);
-    max-width: 300px;
-  }
