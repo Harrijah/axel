@@ -14,7 +14,9 @@
     ;
 
     img{
+        position: relative;
         width: 100%;
+        z-index: -2;
     }
 
     .principal01{
@@ -25,20 +27,32 @@
         h1 {
             position: relative;
             text-align: right;
-            font-size: 4rem;
-            line-height: 50px;
+            font-size: 4.5rem;
             font-family: 'Rajdhani', sans-serif;
           }
     }
     .principal02{
         grid-area: l1b;
+        padding: 5%;
+        
+        .main-image{
+            border-bottom: solid 5px $color01;
+        }
     }
     .product-card01, .product-card02, .product-card03, .product-card04{
         padding: 0 5%;
+        text-align: center;
+
         h2{
+            padding: 5% 15%;
             font-family: 'Rajdhani', sans-serif;
             font-size: 1.5rem;
-            color: $color02;
+            font-weight: bold;
+            background: $color02;
+            color: white;
+        }
+        p{
+            padding: 5% 10%;
         }
     }
     .product-card01{
@@ -57,36 +71,31 @@
         grid-area: l3d;
     }
     
-    .backme{
-        color: white;
-        background-color: $color01;
-        height: fit-content;
-        padding: 20px;
-        border-radius: 30px;
-        box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
-      }
-      .backme02{
-        height: fit-content;
-        padding: 20px;
-        border-radius: 0 0 5px 5px;
-        backdrop-filter: blur(1.5rem);
-        background-color: var(--color07);
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
-      }
 
     .news01{
         grid-area: l4a;
+        margin: 20px auto;
         padding: 20px;
         border-radius: 20px;
         border-image-slice: 2;
         border-image-width: 4px;
         border-image: linear-gradient(235deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), var(--color04) 70% );
-        background: linear-gradient(95deg, rgba(255, 255, 255, 0.70), rgba(255, 255, 255, 0) 90%);
+        background: linear-gradient(95deg, white, rgba(255, 255, 255, 0) 90%);
+            
+        input, textarea{
+            display: block;
+            resize: vertical;
+            margin: 10px 0;
+            border: solid 1px $color01;
+            border-radius: 5px;
+        }
+        input{
+            min-width: 300px;
+            width: 400px;
+            max-width: 600px;
+            line-height: 30px;
+            margin: 15px 0;
+        }
     }
-    .bouton01{
-        @include bouton;
-        color: var(--color01);
-        border: solid 2px var(--color01);
-      }
 
 }

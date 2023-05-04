@@ -51,9 +51,39 @@ body{
 @mixin bouton{
   position: relative;
   text-decoration: none;
-  margin: 10px 0;
+  background: white;
+  margin: 0 auto;
   padding: 10px 15px;
   border-radius: 50px;
   box-shadow: rgba(0, 0, 0, 0) 0px 20px 30px;    
   animation: 0.9s;
+}
+.bouton01{
+  @include bouton;
+  color: $color02;
+  border: solid 2px $color02;
+  &:hover{
+      transform: translateX(5%);
+      color: $color01;
+      background: $color07;
+      border: solid 2px $color01;
+      box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 5px;
+}
+}
+.backme{
+  position: relative;
+  padding-bottom: 10%;
+  border-radius: 0 0 5px 5px;
+  backdrop-filter: blur(1.5rem);
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
+}
+.backme02{
+  position: relative;
+  margin-top: -40%;
+  padding-bottom: 10%;
+  border-radius: 0 0 5px 5px;
+  backdrop-filter: blur(1.5rem);
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
 }

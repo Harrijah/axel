@@ -27,6 +27,48 @@ body a:hover {
   text-decoration: none;
 }
 
+.bouton01 {
+  position: relative;
+  text-decoration: none;
+  background: white;
+  margin: 0 auto;
+  padding: 10px 15px;
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0) 0px 20px 30px;
+  -webkit-animation: 0.9s;
+          animation: 0.9s;
+  color: #27686A;
+  border: solid 2px #27686A;
+}
+.bouton01:hover {
+  transform: translateX(5%);
+  color: #2D9A4D;
+  background: rgba(255, 255, 255, 0.5);
+  border: solid 2px #2D9A4D;
+  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 5px;
+}
+
+.backme {
+  position: relative;
+  padding-bottom: 10%;
+  border-radius: 0 0 5px 5px;
+  -webkit-backdrop-filter: blur(1.5rem);
+          backdrop-filter: blur(1.5rem);
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
+}
+
+.backme02 {
+  position: relative;
+  margin-top: -40%;
+  padding-bottom: 10%;
+  border-radius: 0 0 5px 5px;
+  -webkit-backdrop-filter: blur(1.5rem);
+          backdrop-filter: blur(1.5rem);
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
+}
+
 nav {
   position: relative;
   width: 100%;
@@ -80,6 +122,7 @@ nav:nth-child(1) ul .menu .menu-drop {
   visibility: hidden;
   top: 80px;
   margin: 0;
+  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   z-index: 2;
@@ -103,7 +146,9 @@ nav:nth-child(1) ul .menu .menu-drop li a {
   grid-template-areas: "l1a l1a l1b l1b" "l2a l2b l1b l1b" "l2a l2b l3c l3d" "l4a l4a l3c l3d";
 }
 .principal-ban img {
+  position: relative;
   width: 100%;
+  z-index: -2;
 }
 .principal-ban .principal01 {
   grid-area: l1a;
@@ -115,20 +160,30 @@ nav:nth-child(1) ul .menu .menu-drop li a {
 .principal-ban .principal01 h1 {
   position: relative;
   text-align: right;
-  font-size: 4rem;
-  line-height: 50px;
+  font-size: 4.5rem;
   font-family: "Rajdhani", sans-serif;
 }
 .principal-ban .principal02 {
   grid-area: l1b;
+  padding: 5%;
+}
+.principal-ban .principal02 .main-image {
+  border-bottom: solid 5px #2D9A4D;
 }
 .principal-ban .product-card01, .principal-ban .product-card02, .principal-ban .product-card03, .principal-ban .product-card04 {
   padding: 0 5%;
+  text-align: center;
 }
 .principal-ban .product-card01 h2, .principal-ban .product-card02 h2, .principal-ban .product-card03 h2, .principal-ban .product-card04 h2 {
+  padding: 5% 15%;
   font-family: "Rajdhani", sans-serif;
   font-size: 1.5rem;
-  color: #27686A;
+  font-weight: bold;
+  background: #27686A;
+  color: white;
+}
+.principal-ban .product-card01 p, .principal-ban .product-card02 p, .principal-ban .product-card03 p, .principal-ban .product-card04 p {
+  padding: 5% 10%;
 }
 .principal-ban .product-card01 {
   grid-area: l2a;
@@ -144,43 +199,28 @@ nav:nth-child(1) ul .menu .menu-drop li a {
 .principal-ban .product-card04 {
   grid-area: l3d;
 }
-.principal-ban .backme {
-  color: white;
-  background-color: #2D9A4D;
-  height: -moz-fit-content;
-  height: fit-content;
-  padding: 20px;
-  border-radius: 30px;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
-}
-.principal-ban .backme02 {
-  height: -moz-fit-content;
-  height: fit-content;
-  padding: 20px;
-  border-radius: 0 0 5px 5px;
-  -webkit-backdrop-filter: blur(1.5rem);
-          backdrop-filter: blur(1.5rem);
-  background-color: var(--color07);
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
-}
 .principal-ban .news01 {
   grid-area: l4a;
+  margin: 20px auto;
   padding: 20px;
   border-radius: 20px;
   border-image-slice: 2;
   border-image-width: 4px;
   -o-border-image: linear-gradient(235deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), var(--color04) 70%);
      border-image: linear-gradient(235deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), var(--color04) 70%);
-  background: linear-gradient(95deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0) 90%);
+  background: linear-gradient(95deg, white, rgba(255, 255, 255, 0) 90%);
 }
-.principal-ban .bouton01 {
-  position: relative;
-  text-decoration: none;
+.principal-ban .news01 input, .principal-ban .news01 textarea {
+  display: block;
+  resize: vertical;
   margin: 10px 0;
-  padding: 10px 15px;
-  border-radius: 50px;
-  box-shadow: rgba(0, 0, 0, 0) 0px 20px 30px;
-  animation: 0.9s;
-  color: var(--color01);
-  border: solid 2px var(--color01);
+  border: solid 1px #2D9A4D;
+  border-radius: 5px;
+}
+.principal-ban .news01 input {
+  min-width: 300px;
+  width: 400px;
+  max-width: 600px;
+  line-height: 30px;
+  margin: 15px 0;
 }/*# sourceMappingURL=index.css.map */

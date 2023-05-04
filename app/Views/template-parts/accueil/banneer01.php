@@ -23,7 +23,7 @@
                 <div class="spacer"></div>
                 <img src="<?php echo base_url('image/resized/men-gba721144d_1280.png'); ?>" alt="Marketing digital" class="md">
                 <div class="separator"></div>
-                <div class="backme02">
+                <div class="backme">
                     <h2>Marketing digital</h2>
                     <p>SEO, SEA, Growth hacking, Community management. Nous développons votre visibilité en ligne.</p>
                     <a href="#" class="bouton01">En savoir plus</a>
@@ -34,10 +34,10 @@
         <div class="product-card03">
             <img src="<?php echo base_url('image/resized/pencil.png'); ?>" alt="Création graphique" class="image-separator">
             <!-- <div class="separator"></div> -->
-            <div class="backme">
+            <div class="backme02">
                 <h2>Création graphique</h2>
                 <p>Création de logo, création de bannières web et bannières publicitaires, création de visuels pour vos brochures, création de plan 3D et architectural</p>
-                <a href="#" class="bouton02">En savoir plus</a>
+                <a href="#" class="bouton01">En savoir plus</a>
             </div>                        
         </div>
 
@@ -57,7 +57,7 @@
                 <form action="" method="post">
                     <textarea name="" id="" cols="50" rows="5" placeholder="Décrivez-le nous en quelques mots !"></textarea>
                     <input type="email" name="email" id="email" placeholder="Votre e-mail">
-                    <button type="submit" id="mydemand">Soumettre</button>
+                    <button type="submit" id="mydemand" class="bouton01">Soumettre</button>
                 </form>
             </div>
         </div>
