@@ -43,6 +43,16 @@
         padding: 0 5%;
         text-align: center;
 
+        .backme02{
+            @include backme02;
+            margin-top: -40%;
+            padding-bottom: 10%;
+        }
+        .backme{
+            @include backme02;
+            padding-bottom: 10%;
+        }
+
         h2{
             padding: 5% 15%;
             font-family: 'Rajdhani', sans-serif;
@@ -61,7 +71,7 @@
     .product-card02{
         grid-area: l2b;
         display: flex;
-        align-items: center;
+        align-items: flex-end;
         
     }
     .product-card03{
@@ -70,8 +80,6 @@
     .product-card04{
         grid-area: l3d;
     }
-    
-
     .news01{
         grid-area: l4a;
         margin: 20px auto;
@@ -84,10 +92,12 @@
             
         input, textarea{
             display: block;
+            width: 100%;
             resize: vertical;
             margin: 10px 0;
             border: solid 1px $color01;
             border-radius: 5px;
+            background: none;
         }
         input{
             min-width: 300px;

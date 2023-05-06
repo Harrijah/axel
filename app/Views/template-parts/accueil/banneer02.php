@@ -22,7 +22,7 @@
                 <p>
                     Donnez vie à votre entreprise avec une communication visuelle captivante qui transmet votre message avec clarté et créativité. Conception de logos et de supports marketing, photos et vidéos professionnelles, notre agence peut vous aider à véhiculer une image de marque forte, professionnelle, cohérente et mémorable. Nous offrons des services de référencement, de publicité en ligne et de community management afin de vous promouvoir auprès du public cible. Laissez-nous vous aider à créer une communication visuelle exceptionnelle qui reflète l'essence même de votre entreprise et attire l'attention de votre public.
                 </p>
-                <a href="#" class="bouton02">Nous contacter</a>
+                <a href="#" class="bouton01">Nous contacter</a>
             </div>
             <div class="imagb02">
                 <img src="<?php echo base_url('image/resized/magician.fw.png') ?>" alt="Une bonne image de marque" class="imagimb02">

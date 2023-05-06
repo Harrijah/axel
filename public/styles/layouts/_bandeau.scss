@@ -1,0 +1,56 @@
+.arg01{
+    position: relative;
+    &::after{
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 60%;
+        height: 80%;
+        content: "";
+        clip-path: polygon(0% 0%, 0% 100%, 13% 100%, 12% 12%, 87% 12%, 87% 88%, 11% 89%, 12% 100%, 100% 100%, 100% 0%);
+        background-color: $color06;
+        z-index: -2;
+    }
+    .bandeau01, .extraband, .bandeau03{
+        position: relative;
+        width: 90%;
+        margin: 40px auto;
+        
+    }
+    .imagb01, .imagb03{ 
+        height: 300px;
+        padding: 5%;
+        
+        img{
+            position: relative;
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+    .bandeau01, .bandeau02, .bandeau03{
+        position: relative;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: auto;
+
+        .textb01, .textb02, .textb03{
+            @include backme02;
+            padding: 5%;
+        }
+    }
+    .bandeau02{
+        grid-template-columns: 60% 40%;
+        
+        .imagb02{ 
+            height: 300px;
+            padding: 5%;
+
+            img{
+                position: relative;
+                height: 100%;
+                margin: 0 auto;
+            }
+        }
+    }
+}

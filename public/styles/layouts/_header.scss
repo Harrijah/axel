@@ -32,13 +32,14 @@ nav{
                 position: relative;
                 height: 100%;
                 @include centerChild;
+                transition: 0.7s;
 
                 a, .menu-services{
                     position: relative;
                     display: block;
                     padding: 30px 30px;
                     color: $color09;
-                    transition: 0.7s ease;
+                    transition: 0.7s;
 
                     &:hover{
                         color: $color02;
@@ -57,9 +58,11 @@ nav{
     
                     li{
                         background-color: $color02;
+                        transition: 0.7s;
                         a{
                             display: block;
                             padding: 10px 15px;
+                            transition: 0.7s;
                         }
                     }
                 }

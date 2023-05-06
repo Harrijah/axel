@@ -12,7 +12,7 @@
                 <ul>
                     <li class="serv-title">Nos services</li>
                     <li><a href="<?php echo base_url('development'); ?>" class="<?php echo $maclasse; ?>">Développement web</a></li>
-                    <li><a href="<?php echo base_url('marketing'); ?>" class="">Marketing digital</a></li>
+                    <li><a href="<?php echo base_url('marketing'); ?>" class="">Marketing digital</a></li> 
                     <li><a href="<?php echo base_url('design'); ?>" class="">Création graphique</a></li>
                     <li><a href="<?php echo base_url('print'); ?>"class="">Création de supports</a></li>
                 </ul>
