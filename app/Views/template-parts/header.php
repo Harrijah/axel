@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="<?php echo base_url('bootstrap/css/bootstrap.css'); ?>">
     <link rel="stylesheet" href="<?php echo base_url('bootstrap/css/bootstrap.min.css'); ?>">
     <link rel="stylesheet" href="<?php echo base_url('styles/index.css'); ?>">
-    <title>Bienvenue sur Axel</title>
+    <title><?= $title; ?></title>
 </head>
     
 <!-- Google tag (gtag.js) -->
@@ -34,22 +34,22 @@
         </div>
         <div class="menu-section">
             <ul class="">
-                <li class="menu"><a href="<?php echo base_url('/') ?>" class="menubutton">Accueil</a></li>
-                <li class="menu"><a href="<?php echo base_url('/') ?>" class="menubutton">A propos de nous</a></li>
+                <li class="menu"><a href="<?php echo base_url('/') ?>" class="menubutton  <?=  ($maclasse == '')? 'development':null ; ?> ">Accueil</a></li>
+                <li class="menu"><a href="#" class="menubutton  <?=  ($maclasse == 'aboutus')? $maclasse:null ; ?> ">A propos de nous</a></li>
                 <li class="menu dropmoth">
                     <div class="menu-services">Nos services</div>
                     <ul class="menu-drop">
-                        <li class="deroul-menu"><a href="<?php echo base_url('development') ?>" class="menubutton">Développement web & app</a></li>
-                        <li class="deroul-menu"><a href="<?php echo base_url('marketing') ?>" class="menubutton">Marketing digital</a></li>
-                        <li class="deroul-menu"><a href="<?php echo base_url('design') ?>" class="menubutton">Création graphique</a></li>
-                        <li class="deroul-menu"><a href="<?php echo base_url('print') ?>" class="menubutton">Supports et PLV</a></li>
+                        <li class="deroul-menu"><a href="<?php echo base_url('development') ?>" class="menubutton  <?=  ($maclasse == 'development')? $maclasse:null ; ?> ">Développement web & app</a></li>
+                        <li class="deroul-menu"><a href="<?php echo base_url('marketing') ?>" class="menubutton  <?=  ($maclasse == 'marketing')? $maclasse:null ; ?> ">Marketing digital</a></li>
+                        <li class="deroul-menu"><a href="<?php echo base_url('design') ?>" class="menubutton  <?=  ($maclasse == 'design')? $maclasse:null ; ?> ">Création graphique</a></li>
+                        <li class="deroul-menu"><a href="<?php echo base_url('print') ?>" class="menubutton  <?=  ($maclasse == 'print')? $maclasse:null ; ?> ">Supports et PLV</a></li>
                     </ul>
                 </li>
                 <li class="menu">
-                    <a href="#" class="menubutton">Blog</a>
+                    <a href="#" class="menubutton  <?=  ($maclasse == 'blog')? $maclasse:null ; ?> ">Blog</a>
                 </li>
                 <li class="menu">
-                    <a href="#" class="menubutton" id="modalbutton">Nous contacter</a>
+                    <a href="#" class="menubutton  <?=  ($maclasse == 'contact')? $maclasse:null ; ?> " id="modalbutton">Nous contacter</a>
                 </li>
             </ul>
         </div>

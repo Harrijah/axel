@@ -94,6 +94,16 @@ nav {
   height: 80px;
   background: #27686A;
 }
+@media screen and (max-width: 950px) {
+  nav {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  nav {
+    display: none;
+  }
+}
 nav:nth-child(1) ul {
   position: relative;
   margin: 0;
@@ -128,6 +138,10 @@ nav:nth-child(1) ul .menu a:hover, nav:nth-child(1) ul .menu .menu-services:hove
   color: #27686A;
   background: #F7F8F6;
 }
+nav:nth-child(1) ul .menu .development, nav:nth-child(1) ul .menu .marketing, nav:nth-child(1) ul .menu .design, nav:nth-child(1) ul .menu .print {
+  color: #27686A;
+  background: #F7F8F6;
+}
 nav:nth-child(1) ul .menu .menu-drop {
   position: absolute;
   display: block;
@@ -152,12 +166,24 @@ nav:nth-child(1) ul .menu .menu-drop li a {
 .principal-ban {
   position: relative;
   width: 80%;
-  min-width: 900px;
   margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto auto auto auto;
   grid-template-areas: "l1a l1a l1b l1b" "l2a l2b l1b l1b" "l2a l2b l3c l3d" "l4a l4a l3c l3d";
+}
+@media screen and (max-width: 950px) {
+  .principal-ban {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "l1a l1b" "l2a l2b" "l3c l3d" "l4a l4a";
+  }
+}
+@media screen and (max-width: 500px) {
+  .principal-ban {
+    display: block;
+    margin-top: 20px;
+  }
 }
 .principal-ban img {
   position: relative;
@@ -166,7 +192,7 @@ nav:nth-child(1) ul .menu .menu-drop li a {
 }
 .principal-ban .principal01 {
   grid-area: l1a;
-  height: 50vh;
+  height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -175,18 +201,72 @@ nav:nth-child(1) ul .menu .menu-drop li a {
   position: relative;
   text-align: right;
   font-size: 4.5rem;
+  font-weight: bolder;
   font-family: "Rajdhani", sans-serif;
+}
+@media screen and (max-width: 1000px) {
+  .principal-ban .principal01 h1 {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .principal-ban .principal01 h1 {
+    font-size: 2rem;
+  }
 }
 .principal-ban .principal02 {
   grid-area: l1b;
+  position: relative;
   padding: 5%;
 }
+@media screen and (max-width: 500px) {
+  .principal-ban .principal02 {
+    position: relative;
+    display: block;
+    margin-top: -40%;
+    text-align: right;
+  }
+}
 .principal-ban .principal02 .main-image {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   border-bottom: solid 5px #2D9A4D;
+}
+@media screen and (max-width: 700px) {
+  .principal-ban .principal02 .main-image {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+@media screen and (max-width: 500px) {
+  .principal-ban .principal02 .main-image {
+    position: relative;
+    width: 30%;
+  }
 }
 .principal-ban .product-card01, .principal-ban .product-card02, .principal-ban .product-card03, .principal-ban .product-card04 {
   padding: 0 5%;
   text-align: center;
+}
+@media screen and (max-width: 950px) {
+  .principal-ban .product-card01, .principal-ban .product-card02, .principal-ban .product-card03, .principal-ban .product-card04 {
+    width: 80%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 750px) {
+  .principal-ban .product-card01, .principal-ban .product-card02, .principal-ban .product-card03, .principal-ban .product-card04 {
+    width: 100%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 500px) {
+  .principal-ban .product-card01, .principal-ban .product-card02, .principal-ban .product-card03, .principal-ban .product-card04 {
+    width: 80%;
+    margin-top: 20px;
+  }
 }
 .principal-ban .product-card01 .backme02, .principal-ban .product-card02 .backme02, .principal-ban .product-card03 .backme02, .principal-ban .product-card04 .backme02 {
   position: relative;
@@ -253,8 +333,8 @@ nav:nth-child(1) ul .menu .menu-drop li a {
   background: none;
 }
 .principal-ban .news01 input {
-  min-width: 300px;
-  width: 400px;
+  min-width: 200px;
+  width: 100%;
   max-width: 600px;
   line-height: 30px;
   margin: 15px 0;
@@ -339,7 +419,7 @@ nav:nth-child(1) ul .menu .menu-drop li a {
   padding: 10px;
 }
 .banneer03 .ban03container .team-member img {
-  max-height: 150px;
+  width: 100%;
 }
 .banneer03 .ban03container .team-member .productcard01 {
   position: relative;
@@ -483,6 +563,9 @@ nav:nth-child(1) ul .menu .menu-drop li a {
 .serv-col .servcol01 .mask a:hover {
   background: #2D9A4D;
 }
+.serv-col .servcol01 .mask .development, .serv-col .servcol01 .mask .marketing, .serv-col .servcol01 .mask .design, .serv-col .servcol01 .mask .print {
+  background: #2D9A4D;
+}
 .serv-col .serv-container {
   position: relative;
   grid-area: gcol02;
@@ -509,6 +592,7 @@ nav:nth-child(1) ul .menu .menu-drop li a {
   padding: 2.5%;
   width: 60%;
   background: rgba(71, 94, 34, 0.0392156863);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px;
 }
 .serv-col .serv-container .les-services .service-det01 .dev01, .serv-col .serv-container .les-services .service-det01 .dev02, .serv-col .serv-container .les-services .service-det01 .dev03, .serv-col .serv-container .les-services .service-det01 .dev04, .serv-col .serv-container .les-services .service-det01 .market01, .serv-col .serv-container .les-services .service-det01 .market02, .serv-col .serv-container .les-services .service-det01 .market03, .serv-col .serv-container .les-services .service-det01 .market04, .serv-col .serv-container .les-services .service-det01 .design01,
 .serv-col .serv-container .les-services .service-det01 .design02, .serv-col .serv-container .les-services .service-det01 .design03, .serv-col .serv-container .les-services .service-det01 .design04, .serv-col .serv-container .les-services .service-det01 .print01, .serv-col .serv-container .les-services .service-det01 .print02, .serv-col .serv-container .les-services .service-det02 .dev01, .serv-col .serv-container .les-services .service-det02 .dev02, .serv-col .serv-container .les-services .service-det02 .dev03, .serv-col .serv-container .les-services .service-det02 .dev04, .serv-col .serv-container .les-services .service-det02 .market01, .serv-col .serv-container .les-services .service-det02 .market02, .serv-col .serv-container .les-services .service-det02 .market03, .serv-col .serv-container .les-services .service-det02 .market04, .serv-col .serv-container .les-services .service-det02 .design01,

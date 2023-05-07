@@ -1,7 +1,6 @@
 .principal-ban{
     position: relative;
     width: 80%;
-    min-width: 900px;
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -12,6 +11,20 @@
     "l2a l2b l3c l3d"
     "l4a l4a l3c l3d"
     ;
+    @media screen and(max-width: 950px){
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: 
+        "l1a l1b"
+        "l2a l2b"
+        "l3c l3d"
+        "l4a l4a"
+        ;
+    }
+    @media screen and (max-width:500px){
+        display: block;
+        margin-top: 20px;
+    }
 
     img{
         position: relative;
@@ -21,27 +34,68 @@
 
     .principal01{
         grid-area: l1a;
-        height: 50vh;
+        height: 400px;
         @include centerChild;
 
         h1 {
             position: relative;
             text-align: right;
             font-size: 4.5rem;
+            font-weight: bolder;
             font-family: 'Rajdhani', sans-serif;
+            @media screen and(max-width:1000px){
+                font-size: 3rem;
+            }
+            @media screen and (max-width:700px){
+                font-size: 2rem;
+            }
           }
     }
     .principal02{
         grid-area: l1b;
+        position: relative;
         padding: 5%;
+
+
+        @media screen and (max-width:500px){
+            position: relative;
+            display: block;
+            margin-top: -40%;
+            text-align: right;
+        }
         
         .main-image{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
             border-bottom: solid 5px $color01;
+            @media screen and (max-width:700px){
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            @media screen and (max-width:500px){
+                position: relative;
+                width: 30%;
+            }
         }
     }
     .product-card01, .product-card02, .product-card03, .product-card04{
         padding: 0 5%;
         text-align: center;
+        @media screen and (max-width:950px){
+            width: 80%;
+            margin: auto;
+        }
+        @media screen and (max-width:750px){
+            width: 100%;
+            margin: auto;
+        }
+        @media screen and (max-width:500px){
+            width: 80%;
+            margin-top: 20px;
+        }
 
         .backme02{
             @include backme02;
@@ -100,8 +154,8 @@
             background: none;
         }
         input{
-            min-width: 300px;
-            width: 400px;
+            min-width: 200px;
+            width: 100%;
             max-width: 600px;
             line-height: 30px;
             margin: 15px 0;

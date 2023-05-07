@@ -89,6 +89,7 @@ body{
   padding: 2.5%;
   width: 60%;
   background: $color06;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px;
 }
 @mixin imgpart{
   position: relative;

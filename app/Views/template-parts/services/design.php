@@ -11,10 +11,10 @@
             <div class="mask">
                 <ul>
                     <li class="serv-title">Nos services</li>
-                    <li><a href="<?php echo base_url('development'); ?>" class="">Développement web</a></li>
-                    <li><a href="<?php echo base_url('marketing'); ?>" class="">Marketing digital</a></li>
-                    <li><a href="<?php echo base_url('design'); ?>" class="<?php echo $maclasse; ?>">Création graphique</a></li>
-                    <li><a href="<?php echo base_url('print'); ?>"class="">Crétaion de supports</a></li>
+                    <li><a href="<?php echo base_url('development'); ?>" class="  <?=  ($maclasse == 'development')? $maclasse:null ; ?> ">Développement web</a></li>
+                    <li><a href="<?php echo base_url('marketing'); ?>" class="  <?=  ($maclasse == 'marketing')? $maclasse:null ; ?> ">Marketing digital</a></li>
+                    <li><a href="<?php echo base_url('design'); ?>" class="  <?=  ($maclasse == 'design')? $maclasse:null ; ?> ">Création graphique</a></li>
+                    <li><a href="<?php echo base_url('print'); ?>"class="  <?=  ($maclasse == 'print')? $maclasse:null ; ?> ">Crétaion de supports</a></li>
                 </ul>
             </div>
         </div>
