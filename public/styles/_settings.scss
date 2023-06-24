@@ -83,6 +83,12 @@ body{
   justify-content: $param;
   align-items: center;
 }
+@mixin gridme{
+  position: relative;
+  display: grid;
+  grid-template-rows: auto;
+  align-items: center;
+}
 @mixin textpart{
   position: relative;
   margin: 10px;

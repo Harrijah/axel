@@ -21,7 +21,7 @@
             $uri = service('uri');
             $lien = $uri->getSegment(1);
             $data = [
-                'title' => "Webmarketing",
+                'title' => "Digit market",
                 'maclasse' => $lien,
             ];
             return view('template-parts/header', $data)

@@ -18,9 +18,57 @@
         margin: 40px auto;
         
     }
-    .imagb01, .imagb03{ 
-        height: 300px;
+    .bandeau01, .bandeau03{
+        @include gridme;
+        grid-template-columns: 40% 60%;
+        
+        @media screen and (max-width: 600px){
+            grid-template-columns: 20% 80%;
+        }
+        @media screen and (max-width: 500px){
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .bandeau02{
+        @include gridme;
+        grid-template-columns: 60% 40%;
+
+        @media screen and (max-width: 600px){
+            grid-template-columns: 80% 20%;
+        }
+        @media screen and (max-width: 500px){
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto;
+            grid-template-areas: 
+            "b1"
+            "b2";
+            .imagb02{
+                grid-area: b1;
+            }
+            .textb02{
+                grid-area: b2;
+            }
+
+        }
+        
+        .imagb02{
+            max-height: 300px;
+            img{
+                @media screen and (max-width: 500px){
+                    height: 100%;
+                    width: auto;
+                }
+            }
+        }
+    }
+    .imagb01, .imagb02, .imagb03{ 
+        @include centerChild;
         padding: 5%;
+        @media screen and (max-width: 500px){
+            width: 80vw;
+            z-index: -2;
+        }
         
         img{
             position: relative;
@@ -28,29 +76,11 @@
             margin: 0 auto;
         }
     }
-    .bandeau01, .bandeau02, .bandeau03{
-        position: relative;
-        display: grid;
-        grid-template-columns: 40% 60%;
-        grid-template-rows: auto;
-
-        .textb01, .textb02, .textb03{
-            @include backme02;
-            padding: 5%;
-        }
-    }
-    .bandeau02{
-        grid-template-columns: 60% 40%;
-        
-        .imagb02{ 
-            height: 300px;
-            padding: 5%;
-
-            img{
-                position: relative;
-                height: 100%;
-                margin: 0 auto;
-            }
+    .textb01, .textb02, .textb03{
+        @include backme02;
+        padding: 5%;
+        @media screen and (max-width: 500px){
+            margin-top: -15%;
         }
     }
 }

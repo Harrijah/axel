@@ -8,24 +8,30 @@
             <img src="<?php echo base_url('image/resized/hari.fw.png') ?>" alt="Chef de projet développement Web" class="avatar"> 
             <div class="separator"></div>
             <div class="productcard01">
-                <span class="myname">Hari. A</span>
-                <h3>Chef de projet développement web</h3>
+                <div>
+                    <span class="myname">Hari. A</span>
+                    <h3>Chef de projet développement web</h3>
+                </div>
             </div>
         </div>
         <div class="team-member">
             <img src="<?php echo base_url('image/resized/female_avatar.fw.png') ?>" alt="Chef de projet webmarketing" class="avatar">
             <div class="separator"></div>
             <div class="productcard01">
-                <span class="myname">Olivia R.</span>
-                <h3>Chef de projet webmarketing</h3>
+                <div>
+                    <span class="myname">Olivia R.</span>
+                    <h3>Chef de projet webmarketing</h3>
+                </div>
             </div>
         </div>
         <div class="team-member">
             <img src="<?php echo base_url('image/resized/branco.fw.png') ?>" alt="Chef de projet design" class="avatar">
             <div class="separator"></div>
             <div class="productcard01">
-                <span class="myname">Branco M.</span>
-                <h3>Chef de projet design</h3>
+                <div>
+                    <span class="myname">Branco M.</span>
+                    <h3>Chef de projet design</h3>
+                </div>
             </div>
         </div>
     </div>

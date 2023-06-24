@@ -37,7 +37,7 @@
                 <li class="menu"><a href="<?php echo base_url('/') ?>" class="menubutton  <?=  ($maclasse == '')? 'development':null ; ?> ">Accueil</a></li>
                 <li class="menu"><a href="#" class="menubutton  <?=  ($maclasse == 'aboutus')? $maclasse:null ; ?> ">A propos de nous</a></li>
                 <li class="menu dropmoth">
-                    <div class="menu-services">Nos services</div>
+                    <div class="menu-services <?= ($maclasse == 'development'||'marketing'||'design'||'print')? $maclasse:null; ?>">Nos services</div>
                     <ul class="menu-drop">
                         <li class="deroul-menu"><a href="<?php echo base_url('development') ?>" class="menubutton  <?=  ($maclasse == 'development')? $maclasse:null ; ?> ">Développement web & app</a></li>
                         <li class="deroul-menu"><a href="<?php echo base_url('marketing') ?>" class="menubutton  <?=  ($maclasse == 'marketing')? $maclasse:null ; ?> ">Marketing digital</a></li>

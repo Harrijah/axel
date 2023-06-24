@@ -66,8 +66,7 @@ body .mymodal {
   padding: 10px 15px;
   border-radius: 50px;
   box-shadow: rgba(0, 0, 0, 0) 0px 20px 30px;
-  -webkit-animation: 0.9s;
-          animation: 0.9s;
+  animation: 0.9s;
   color: #27686A;
   border: solid 2px #27686A;
   transition: 0.5s;
@@ -148,7 +147,6 @@ nav:nth-child(1) ul .menu .menu-drop {
   visibility: hidden;
   top: 80px;
   margin: 0;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   z-index: 2;
@@ -265,7 +263,7 @@ nav:nth-child(1) ul .menu .menu-drop li a {
 @media screen and (max-width: 500px) {
   .principal-ban .product-card01, .principal-ban .product-card02, .principal-ban .product-card03, .principal-ban .product-card04 {
     width: 80%;
-    margin-top: 20px;
+    margin-top: 40px;
   }
 }
 .principal-ban .product-card01 .backme02, .principal-ban .product-card02 .backme02, .principal-ban .product-card03 .backme02, .principal-ban .product-card04 .backme02 {
@@ -361,22 +359,76 @@ nav:nth-child(1) ul .menu .menu-drop li a {
   width: 90%;
   margin: 40px auto;
 }
-.arg01 .imagb01, .arg01 .imagb03 {
-  height: 300px;
+.arg01 .bandeau01, .arg01 .bandeau03 {
+  position: relative;
+  display: grid;
+  grid-template-rows: auto;
+  align-items: center;
+  grid-template-columns: 40% 60%;
+}
+@media screen and (max-width: 600px) {
+  .arg01 .bandeau01, .arg01 .bandeau03 {
+    grid-template-columns: 20% 80%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .arg01 .bandeau01, .arg01 .bandeau03 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.arg01 .bandeau02 {
+  position: relative;
+  display: grid;
+  grid-template-rows: auto;
+  align-items: center;
+  grid-template-columns: 60% 40%;
+}
+@media screen and (max-width: 600px) {
+  .arg01 .bandeau02 {
+    grid-template-columns: 80% 20%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .arg01 .bandeau02 {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "b1" "b2";
+  }
+  .arg01 .bandeau02 .imagb02 {
+    grid-area: b1;
+  }
+  .arg01 .bandeau02 .textb02 {
+    grid-area: b2;
+  }
+}
+.arg01 .bandeau02 .imagb02 {
+  max-height: 300px;
+}
+@media screen and (max-width: 500px) {
+  .arg01 .bandeau02 .imagb02 img {
+    height: 100%;
+    width: auto;
+  }
+}
+.arg01 .imagb01, .arg01 .imagb02, .arg01 .imagb03 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 5%;
 }
-.arg01 .imagb01 img, .arg01 .imagb03 img {
+@media screen and (max-width: 500px) {
+  .arg01 .imagb01, .arg01 .imagb02, .arg01 .imagb03 {
+    width: 80vw;
+    z-index: -2;
+  }
+}
+.arg01 .imagb01 img, .arg01 .imagb02 img, .arg01 .imagb03 img {
   position: relative;
   width: 100%;
   margin: 0 auto;
 }
-.arg01 .bandeau01, .arg01 .bandeau02, .arg01 .bandeau03 {
-  position: relative;
-  display: grid;
-  grid-template-columns: 40% 60%;
-  grid-template-rows: auto;
-}
-.arg01 .bandeau01 .textb01, .arg01 .bandeau01 .textb02, .arg01 .bandeau01 .textb03, .arg01 .bandeau02 .textb01, .arg01 .bandeau02 .textb02, .arg01 .bandeau02 .textb03, .arg01 .bandeau03 .textb01, .arg01 .bandeau03 .textb02, .arg01 .bandeau03 .textb03 {
+.arg01 .textb01, .arg01 .textb02, .arg01 .textb03 {
   position: relative;
   border-radius: 0 0 5px 5px;
   -webkit-backdrop-filter: blur(1.5rem);
@@ -385,17 +437,10 @@ nav:nth-child(1) ul .menu .menu-drop li a {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
   padding: 5%;
 }
-.arg01 .bandeau02 {
-  grid-template-columns: 60% 40%;
-}
-.arg01 .bandeau02 .imagb02 {
-  height: 300px;
-  padding: 5%;
-}
-.arg01 .bandeau02 .imagb02 img {
-  position: relative;
-  height: 100%;
-  margin: 0 auto;
+@media screen and (max-width: 500px) {
+  .arg01 .textb01, .arg01 .textb02, .arg01 .textb03 {
+    margin-top: -15%;
+  }
 }
 
 .banneer03 {
@@ -408,17 +453,19 @@ nav:nth-child(1) ul .menu .menu-drop li a {
   width: 80%;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   align-items: flex-start;
 }
 .banneer03 .ban03container .team-member {
   position: relative;
-  width: 20vw;
+  width: 30%;
   margin: 15px;
-  padding: 10px;
+  padding: 5%;
 }
 .banneer03 .ban03container .team-member img {
+  max-height: 150px;
+  height: auto;
   width: 100%;
 }
 .banneer03 .ban03container .team-member .productcard01 {
@@ -428,6 +475,10 @@ nav:nth-child(1) ul .menu .menu-drop li a {
           backdrop-filter: blur(1.5rem);
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
   border-top: solid 5px #2D9A4D;
   padding: 5%;
 }
@@ -855,8 +906,7 @@ nav:nth-child(1) ul .menu .menu-drop li a {
   padding: 10px 15px;
   border-radius: 50px;
   box-shadow: rgba(0, 0, 0, 0) 0px 20px 30px;
-  -webkit-animation: 0.9s;
-          animation: 0.9s;
+  animation: 0.9s;
   display: flex;
   justify-content: center;
   align-items: center;
