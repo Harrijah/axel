@@ -46,7 +46,7 @@
                     </ul>
                 </li>
                 <li class="menu">
-                    <a href="#" class="menubutton  <?=  ($maclasse == 'blog')? $maclasse:null ; ?> ">Blog</a>
+                    <a href="#" class="menubutton  <?=  ($maclasse == 'blog')? $maclasse:null ; ?> ">Actus</a>
                 </li>
                 <li class="menu">
                     <a href="#" class="menubutton  <?=  ($maclasse == 'contact')? $maclasse:null ; ?> " id="modalbutton">Nous contacter</a>
