@@ -1,0 +1,156 @@
+
+  $color01: #2D9A4D;
+  $color02: #27686A; 
+  $color03: #2D9A4D;
+  $color04: #27686A;
+  $color05: #213586;
+  $color06: #475e220a;
+  $color07: rgba(255, 255, 255, 0.50);
+  $color08: #1641AB;
+  $color09: #F7F8F6;
+  $color10: #27686ad8;
+  $color11: rgba(255, 255, 255, 0.849);
+
+@font-face {
+  font-family: Pacifico;
+  src: url(./fonts/Pacifico-Regular.ttf);
+}
+@font-face {
+  font-family: Rajdhani;
+  src: url(./fonts/Rajdhani-Light.ttf);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-size: 0.9rem;
+  background: $color06;
+  li{
+    list-style: none;
+  }
+  a{
+    text-decoration: none;
+    color: $color02;
+    &:hover{
+      color: $color01;
+      text-decoration: none;
+    }
+  }
+      
+  h2{
+    font-family: Rajdhani, sans-serif;
+    font-weight: bold;
+    color: $color02;
+    &::after{
+      position: absolute;
+      width: 15%;
+      height: 5px;
+      left: 0;
+      bottom: -15px;
+      color: $color02;
+    }
+  }
+  h3{
+    font-family: Rajdhani, sans-serif;
+    font-weight: bold;
+    color: $color01;
+  }
+
+     
+  input, textarea{
+    display: block;
+    resize: none;
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: solid 1px $color01;
+  }
+
+  .mymodal{
+    display: none;
+  }
+
+}
+@mixin centerChild{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin centerChildren($param){
+  display: flex;
+  justify-content: $param;
+  align-items: center;
+}
+@mixin gridme{
+  position: relative;
+  display: grid;
+  grid-template-rows: auto;
+  align-items: center;
+}
+@mixin textpart{
+  position: relative;
+  margin: 10px;
+  padding: 2.5%;
+  width: 60%;
+  background: $color06;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px;
+}
+@mixin imgpart{
+  position: relative;
+  display: block;
+  width: 20%;
+  height: 200px;
+}
+
+@mixin fontawesome{
+  position: absolute;
+  font-family: "fontawesome";
+  font-size: 10rem;
+  top: 0;
+  font-weight: bolder;
+  color: $color07;
+  text-shadow: 0px 0px 0px $color02;
+  z-index: -1;
+}
+@mixin before($param){
+  @include fontawesome;
+  content: $param;
+  left: 0;
+}
+@mixin after($param){
+  @include fontawesome;
+  content: $param;
+  right: 0;
+}
+@mixin backme02{
+  position: relative;
+  border-radius: 0 0 5px 5px;
+  backdrop-filter: blur(1.5rem);
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
+}
+@mixin bouton{
+  position: relative;
+  text-decoration: none;
+  background: white;
+  margin: 0 auto;
+  padding: 10px 15px;
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0) 0px 20px 30px;    
+  animation: 0.9s;
+}
+.bouton01{
+  @include bouton;
+  color: $color02;
+  border: solid 2px $color02;
+  transition: 0.5s;
+  &:hover{
+      transform: translateX(5%);
+      color: $color01;
+      background: $color07;
+      border: solid 2px $color01;
+      box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 5px;
+  }
+}

@@ -1,0 +1,243 @@
+.service-back{
+    @include centerChild;
+    clip-path: polygon(0 0, 100% 0, 98% 79%, 15% 100%, 0 100%);
+    width: 100%;
+    background: $color10;
+
+    .service-title{
+        position: relative;
+        width: 60%;
+        color: $color09;
+        font-family: 'Rajdhani', sans-serif;
+        .facode{
+            position: relative;
+            font-weight: 15rem;
+            color: $color09;
+            margin: 20px 0;
+            padding: 10px;
+            border-radius: 50px;
+            background-color: $color01;
+        }
+    }
+}
+.serv-col{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "gcol01 gcol02 gcol03"
+    ;
+    .servcol01{
+        position: relative;
+        grid-area: gcol01;
+        background: $color02;
+        .mask{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.411);
+            .serv-title{
+                position: relative;
+                display: block;
+                text-align: center;
+                padding: 15px 10px;
+                font-size: 1.5rem;
+                font-weight: bold;
+                color: $color02;
+                background: $color09;
+            }
+            a{
+                position: relative;
+                display: block;
+                padding: 20px 10px;
+                color: $color09;
+                text-decoration: none;
+                transition: 1s;
+                &:hover{
+                    background: $color01;
+                }
+            }
+            .development, .marketing, .design, .print{
+                background: $color01;
+            }
+        }
+    }
+    .serv-container{
+        position: relative;
+        grid-area: gcol02;
+        margin: 20px auto;
+        padding: 0 5%;
+
+        .les-services{
+            position: relative;
+            display: block;
+            margin: auto;
+            background: rgba(255, 255, 255, 0);
+            .service-det01, .service-det02, .service-det03, .service-det04{
+                position: relative;
+                @include centerChildren(space-around);
+
+                .sur-mesure, .e-commerce, .site-vitrine, .applications{
+                    @include textpart;
+                }
+                .dev01, .dev02, .dev03, .dev04, .market01, .market02, .market03, .market04, .design01, 
+                .design02, .design03, .design04, .print01, .print02{
+                    @include imgpart;
+                }
+                .dev01::after{
+                    @include before("\f108");
+                }
+                .dev02::after{
+                    @include after("\f23d");
+                }
+                .dev03::after{
+                    @include before("\f121");
+                }
+                .dev04::after{
+                    @include after("\f17b");
+                }
+                .market01::after{
+                    @include before("\f080");
+                }
+                .market02::after{
+                    @include after("\f0ac");
+                }
+                .market03::after{
+                    @include before("\f0c0");
+                }
+                .market04::after{
+                    @include after("\27B3");
+                }
+                .design01::after{
+                    @include before("\270D");
+                }
+                .design02::after{
+                    @include after("\f03e");
+                }
+                .design03::after{
+                    @include before("\f008");
+                }
+                .design04::after{
+                    @include after("\f279");
+                }
+                .print01::after{
+                    @include before("\f1e7");
+                }
+                .print02::after{
+                    @include after("\f20e");
+                }
+            }
+        }
+        
+        /* ********************* Nous choisir **********************/
+        .choisir-container{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin: 40px auto;
+            text-align: center;
+            background: url(../image/resized/icons.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            border-radius: 0 5px 5px 0;
+            border-top: solid 2px rgb(95, 93, 93);
+            border-bottom: solid 2px rgb(95, 93, 93);
+            box-shadow: 1px 2px 3px $color06;
+            .choisir-image{
+                position: relative;
+                display: inline-block;
+                vertical-align: middle;
+                width: 20%;
+                z-index: -1;
+                .choisir-img01{
+                    position: relative;
+                    float: left;
+                }
+            }
+            .choisir-text{
+                position: relative;
+                display: inline-block;
+                width: 80%;
+                color: $color09;
+                padding: 40px;
+                border-radius: 0 5px 5px 0;
+                background-color: $color01;
+                box-shadow: -10px 0px 10px -2px rgba(29, 29, 29, 0.555);
+            }
+        }
+
+        /* ************************************* Formulaire interne ********************************* */
+        .demand-form{
+            position: relative;
+            width: 100%;
+            .clientname::after{
+                content:"\f0e0";
+                position: absolute;
+                right: -7%;
+                top: -11%;
+                font-family: "fontawesome";
+                font-size: 6rem;
+                color: $color02;
+                transform: rotate(45deg);
+            }
+            form{
+                position: relative;
+                min-width: 375px;
+                width: 65%;
+                max-width: 650px;
+                margin: auto;
+                padding: 20px 40px;
+                border-radius: 10px;
+                background-color: $color10;
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
+                
+                label{
+                    margin: 8px 0 0 0;
+                    padding-left: 10px;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    color: $color09;
+                }
+
+                input{
+                    width: 70%;
+                    height: 40px;
+                    border-radius: 5px;
+                    text-align: center;
+                }
+                input[type=submit]{
+                    @include bouton;
+                    @include centerChild;
+                    width: 40%;
+                    max-width: 150px;
+                    color: $color02;
+                    border: solid 2px $color02;
+                    transition: 0.5s;
+                    &:hover{
+                        transform: translateX(5%);
+                        color: $color01;
+                        background: $color07;
+                        border: solid 2px $color01;
+                        box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    .servcol03{
+        grid-area: gcol03;
+        padding: 5%;
+        margin: 0 auto;
+        overflow: hidden;
+
+        img{
+            width: 100%;
+        }
+    }
+}
+

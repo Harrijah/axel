@@ -1,0 +1,86 @@
+.arg01{
+    position: relative;
+    &::after{
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 60%;
+        height: 80%;
+        content: "";
+        clip-path: polygon(0% 0%, 0% 100%, 13% 100%, 12% 12%, 87% 12%, 87% 88%, 11% 89%, 12% 100%, 100% 100%, 100% 0%);
+        background-color: $color06;
+        z-index: -2;
+    }
+    .bandeau01, .extraband, .bandeau03{
+        position: relative;
+        width: 90%;
+        margin: 40px auto;
+        
+    }
+    .bandeau01, .bandeau03{
+        @include gridme;
+        grid-template-columns: 40% 60%;
+        
+        @media screen and (max-width: 600px){
+            grid-template-columns: 20% 80%;
+        }
+        @media screen and (max-width: 500px){
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .bandeau02{
+        @include gridme;
+        grid-template-columns: 60% 40%;
+
+        @media screen and (max-width: 600px){
+            grid-template-columns: 80% 20%;
+        }
+        @media screen and (max-width: 500px){
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto;
+            grid-template-areas: 
+            "b1"
+            "b2";
+            .imagb02{
+                grid-area: b1;
+            }
+            .textb02{
+                grid-area: b2;
+            }
+
+        }
+        
+        .imagb02{
+            max-height: 300px;
+            img{
+                @media screen and (max-width: 500px){
+                    height: 100%;
+                    width: auto;
+                }
+            }
+        }
+    }
+    .imagb01, .imagb02, .imagb03{ 
+        @include centerChild;
+        padding: 5%;
+        @media screen and (max-width: 500px){
+            width: 80vw;
+            z-index: -2;
+        }
+        
+        img{
+            position: relative;
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+    .textb01, .textb02, .textb03{
+        @include backme02;
+        padding: 5%;
+        @media screen and (max-width: 500px){
+            margin-top: -15%;
+        }
+    }
+}
