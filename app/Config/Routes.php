@@ -41,6 +41,7 @@ $routes->get('/marketing', 'Services::marketing');
 $routes->get('/design', 'Services::design');
 $routes->get('/print', 'Services::print');
 $routes->get('/getDuration', 'Accueil::getDuration');
+$routes->get('/Scraper', 'Scraper::scraper');
 
 /*
  * --------------------------------------------------------------------
