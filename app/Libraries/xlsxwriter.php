@@ -3,6 +3,8 @@
  * @license MIT License
  * */
 
+ namespace App\Libraries;
+
 class XLSXWriter
 {
 	//http://www.ecma-international.org/publications/standards/Ecma-376.htm

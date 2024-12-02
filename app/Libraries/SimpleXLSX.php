@@ -1,6 +1,6 @@
 <?php /** @noinspection MultiAssignmentUsageInspection */
 
-namespace Shuchkin;
+namespace App\Libraries;
 
 use SimpleXMLElement;
 
@@ -222,7 +222,7 @@ class SimpleXLSX
             $vZ = $filename;
         } else {
             if (!is_readable($filename)) {
-                $this->error(1, 'File not found ' . $filename);
+                $this->error(1, 'File not found grand a' . $filename);
 
                 return false;
             }
